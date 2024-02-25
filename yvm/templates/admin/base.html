@@ -1,0 +1,17 @@
+<!-- {# to change the header title to all, even in the password changes #} -->
+
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block extrahead %}
+  <link rel="icon" type="image/svg+xml" href="{% static 'yvm/images/favicon.svg' %}">
+{% endblock %}
+
+{% block branding %}
+  <h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:"VoteTracker.eu - Comment my stances" }}</a></h1>
+  {% if user.is_anonymous %}
+    {% include "admin/color_theme_toggle.html" %}
+  {% endif %}
+{% endblock %}
+
+

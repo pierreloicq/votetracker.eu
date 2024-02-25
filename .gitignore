@@ -1,0 +1,6 @@
+*.env
+parltrack_data/*.json
+__pycache__/
+*.pyc
+passenger_wsgi.py
+tmp/

@@ -1,0 +1,56 @@
+{% extends "yvm/base.html" %}
+{% load i18n %}
+{% load static %}
+
+
+{% block main %}
+    <div class="table_body_width center_content has-text-centered py-6">
+        <h2 class="title is-3">{% translate "About" %}</h2>
+        <p>
+            {% translate "This website is a citizen project (i.e. carried out on leisure time) built with the goal to help people to make better decisions." %}
+        </p>
+        <p>{% translate "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by a human being."%}</p>
+        <p>
+            {% translate "The idea came from" %}
+            <a href="http://web.archive.org/web/20201230133428/https://www.yourvotematters.eu/en/" target="_blank">
+                yourvotematters.eu (archive)</a>{% translate ", a website built by the votewatch.eu team for the 2019 elections" %}
+        </p>
+        <p>
+            {% translate "The code is available on github" %}
+        </p>
+        <p>
+            {% translate "The data of the votes come from" %}
+            <a href="https://parltrack.org/dumps" target="_blank">parltrack.org</a> 
+        </p>
+        <p>
+            {% translate "The global design was deeply inspired on" %} <a href="https://howtheyvote.eu/" target="_blank">howtheyvote.eu</a>
+        </p>
+
+        <p>
+            <a href="https://mepwatch.eu/" target="_blank">mepwatch.eu</a>
+            {% translate "was really helpful for building this website" %}
+        </p>
+        <p>
+            {% translate "The picture of the hemicycle on the index page was shot by Fred Marvaux" %}
+            (<a href="https://multimedia.europarl.europa.eu/en/photo/stockshot-of-hemicycle-of-european-parliament-in-strasbourg-vote-by-show-of-hand_20191023_EP-094585E_FMA_047" target="_blank">{% translate "source" %}</a>)
+        </p>
+        <p>
+            {% translate "The website is hosted by o2switch in Clermont-Ferrand, France" %}
+            <br>
+            <span class="has-text-grey-light">(Chemin des Pardiaux 63000 Clermont-Ferrand - SIRET 510 909 80700024 - +33 4 44 44 60 40)</span>
+        </p>
+        <p>
+            {% translate "We use"  %}
+            <a href="https://goatcounter.com" target="_blank">goatcounter.com</a>
+            {% translate "to know the traffic statistics" %}
+        </p>
+        <p>
+            {% translate "Thanks to all these projects and people" %} 
+        </p>
+        <p>
+            {% translate "You can contact us at:" %}
+            <img src="{% static 'yvm/images/email.png' %}" alt="email address provided as an image to avoid spammers"> 
+        </p>
+    </div>
+
+{% endblock %}

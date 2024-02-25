@@ -1,0 +1,100 @@
+{% extends "yvm/base.html" %}
+
+{% load i18n %}
+
+
+{% block main %}
+    <section id="index_section">
+        <div class="has-text-centered container is-max-desktop">
+            <h2 class="title is-3 ">
+                {% translate "Be ready for the European elections of June 2024" %}
+            </h2>
+            <h1 class="title is-2">
+                {% translate "Find out how the current Members of the European Parliament voted on 17 key recent votes" %}
+            </h1>
+        </div>
+        
+        <div class="form_container">
+            <form method="get">
+                <div class="field has-addons">
+                    <div class="control">
+                        <div class="select">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{{ redirect_to }}">
+                            <select name="country" onchange="this.form.submit()">
+                                <option value="selectCountry" disabled selected>{% translate 'Select a country' %}</option>
+                                <option value="Austria">{% translate 'Austria' %}</option>
+                                <option value="Belgium">{% translate 'Belgium' %}</option>
+                                <option value="Bulgaria">{% translate 'Bulgaria' %}</option>
+                                <option value="Croatia">{% translate 'Croatia' %}</option>
+                                <option value="Cyprus">{% translate 'Cyprus' %}</option>
+                                <option value="Czechia">{% translate 'Czechia' %}</option>
+                                <option value="Denmark">{% translate 'Denmark' %}</option>
+                                <option value="Estonia">{% translate 'Estonia' %}</option>
+                                <option value="Finland">{% translate 'Finland' %}</option>
+                                <option value="France">{% translate 'France' %}</option>
+                                <option value="Germany">{% translate 'Germany' %}</option>
+                                <option value="Greece">{% translate 'Greece' %}</option>
+                                <option value="Hungary">{% translate 'Hungary' %}</option>
+                                <option value="Ireland">{% translate 'Ireland' %}</option>
+                                <option value="Italy">{% translate 'Italy' %}</option>
+                                <option value="Latvia">{% translate 'Latvia' %}</option>
+                                <option value="Lithuania">{% translate 'Lithuania' %}</option>
+                                <option value="Luxembourg">{% translate 'Luxembourg' %}</option>
+                                <option value="Malta">{% translate 'Malta' %}</option>
+                                <option value="Netherlands">{% translate 'Netherlands' %}</option>
+                                <option value="Poland">{% translate 'Poland' %}</option>
+                                <option value="Portugal">{% translate 'Portugal' %}</option>
+                                <option value="Romania">{% translate 'Romania' %}</option>
+                                <option value="Slovakia">{% translate 'Slovakia' %}</option>
+                                <option value="Slovenia">{% translate 'Slovenia' %}</option>
+                                <option value="Spain">{% translate 'Spain' %}</option>
+                                <option value="Sweden">{% translate 'Sweden' %}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button type="submit" class="button is-link">ok</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <script>
+        // sort from A to Z the country names after translation
+        document.addEventListener('DOMContentLoaded', function() {
+            var select = document.querySelector('select[name="country"]');
+            var options = Array.from(select.options);
+
+            // Remove the placeholder option from the array
+            var placeholderOption = options.find(option => option.value === "selectCountry");
+            options = options.filter(option => option !== placeholderOption);
+
+            // Sort the remaining options alphabetically
+            options.sort(function(a, b) {
+                return a.text.localeCompare(b.text);
+            });
+
+            // Reinsert the placeholder option at the beginning of the sorted options
+            options.unshift(placeholderOption);
+
+            // Clear the select element
+            select.innerHTML = '';
+
+            // Append the sorted options back to the select element
+            options.forEach(function(option) {
+                select.add(option);
+            });
+        });
+    </script>
+
+    
+{% endblock %}
+
+
+
+
+
+

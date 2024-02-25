@@ -1,0 +1,362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-25 11:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\populate_vote_and_position_tables.py:34
+msgid "Implement measures for ecosystem restoration on 20&#37; of all land and sea areas by 2030, in order to meet the international commitments, with exemptions for renewable energy, housing construction and national defence projects or if food production/price has changed too much"
+msgstr "Mettre en oeuvre des mesures de restauration des écosystèmes sur 20&#37; de toutes les terres et zones maritimes d'ici 2030, afin de respecter les engagements internationaux, avec des exemptions pour les énergies renouvelables, la construction de logements et les projets de défense nationale, ou si la production/les prix alimentaires ont trop changé"
+
+#: .\populate_vote_and_position_tables.py:43
+msgid "Improve and harmonise air quality monitoring and consider more realistic air pollution tresholds, to be met by 2035, while intermediate threshold must be met by 2030"
+msgstr "Améliorer et harmoniser la surveillance de la qualité de l'air et envisager des seuils de pollution atmosphérique plus réalistes, à atteindre d'ici 2035, avec des seuils intermédiaires pour 2030"
+
+#: .\populate_vote_and_position_tables.py:52
+msgid "Propose several targets to reduce the quantity of overall and plastic packaging and require them to be recyclable (with exemptions), while increasing the quantity of recycled plastic in new packages. Ban the use of the “forever chemicals” (PFAS) and Bisphenol A in food contact packaging"
+msgstr "Proposer plusieurs objectifs de réduction de la quantité d'emballages globaux et plastiques et exiger qu'ils soient recyclables (avec des exemptions), tout en augmentant la quantité de plastique recyclé dans les nouveaux emballages. Interdire l'utilisation des « produits chimiques éternels » (PFAS) et du Bisphénol A dans les emballages alimentaires"
+
+#: .\populate_vote_and_position_tables.py:63
+msgid "Require companies to disclose information that makes it easier for employees to compare salaries and to expose existing gender pay gaps"
+msgstr "Exiger des entreprises qu'elles divulguent des informations facilitant la comparaison des salaires par les employés et qu'elles exposent les écarts de rémunération entre les sexes"
+
+#: .\populate_vote_and_position_tables.py:72
+msgid "Remove most trade tariffs between EU and New Zealand while protecting sensitive EU agricultural sectors (like beef and dairy products) with tariff rate quotas. All EU geographical indications (GIs) are protected for wines and spirits as well as 163 famous EU foodstuff GIs"
+msgstr "Supprimer la plupart des droits de douane entre l'UE et la Nouvelle-Zélande tout en protégeant les secteurs agricoles sensibles de l'UE (comme la viande bovine et les produits laitiers) avec des quotas. Toutes les indications géographiques (IG) de l'UE sont protégées pour les vins et spiritueux ainsi que 163 IG alimentaires réputées"
+
+#: .\populate_vote_and_position_tables.py:81
+msgid "Set minimum quality standards for traineeships regarding duration, remuneration, access to social protection, and make them more accessible to persons with disabilities and to those from vulnerable backgrounds"
+msgstr "Établir des normes minimales de qualité pour les stages en ce qui concerne la durée, la rémunération, l'accès à la protection sociale, et les rendre plus accessibles aux personnes handicapées et à celles issues de milieux vulnérables"
+
+#: .\populate_vote_and_position_tables.py:91
+msgid "Facilitate the obtention of the EU long-term resident status for foreigners who have been living in EU for more than 3 years"
+msgstr "Faciliter l'obtention du statut de résident de longue durée - UE pour les étrangers qui vivent au sein de l'UE depuis plus de 3 ans"
+
+#: .\populate_vote_and_position_tables.py:100
+msgid "Push carmakers to produce zero- and low-emission vehicles with the target of 100&#37; of zero emissions cars by 2035, while using a CO₂ computing methodology throughout the full life-cycle"
+msgstr "Inciter les constructeurs automobiles à produire des véhicules à zéro et faibles émissions avec pour objectif 100&#37; de voitures à zéro émissions d'ici 2035, tout en utilisant une méthodologie de calcul du CO₂ prenant en compte le cycle de vie complet"
+
+#: .\populate_vote_and_position_tables.py:110
+msgid "Ban methane flaring and venting for EU and non-EU companies (through rules on importations)"
+msgstr "Interdire les torchères et la purge de méthane pour les entreprises de l'UE et non-UE (par le biais des importations)"
+
+#: .\populate_vote_and_position_tables.py:119
+msgid "Allow a short-term funding for the reinforcement of the European defence industry through joint procurement by member states, with bonuses for projects supporting Ukraine, Moldova and SMEs"
+msgstr "Autoriser un financement à court terme pour le renforcement de l'industrie européenne de la défense par des achats conjoints par les États membres, avec des bonus pour les projets soutenant l'Ukraine, la Moldavie et les PME"
+
+#: .\populate_vote_and_position_tables.py:128
+msgid "Calls on NATO members to invite Ukraine to join the alliance, support Ukraine on its path to EU accession, and put increased pressure on Russia through further sanctions"
+msgstr "Appeller les membres de l'OTAN à inviter l'Ukraine à rejoindre l'alliance, à soutenir l'Ukraine dans son parcours vers l'adhésion à l'UE et à exercer une pression accrue sur la Russie par le biais de sanctions supplémentaires"
+
+#: .\populate_vote_and_position_tables.py:137
+msgid "Launch investigations and implement safeguards to prevent abuse in the use of spyware (e.g. by police, EU or imported from/exported to non-EU governements)"
+msgstr "Lancer des enquêtes et mettre en place des mesures de protection pour prévenir les abus dans l'utilisation des logiciels espions (par exemple, par la police, l'UE ou importés/exportés vers des gouvernements non-UE)"
+
+#: .\populate_vote_and_position_tables.py:145
+msgid "Following the Qatargate corruption affair, call to implement effective systems to detect foreign interference in European Parliament activity and enforce sanctions on offending countries. Call for a rapid review of the MEP's Code of Conduct and monitor the activity of former MEPs"
+msgstr "Suite à l'affaire de corruption du Qatargate, appeler à la mise en place de systèmes efficaces pour détecter les ingérences étrangères dans les activités du Parlement européen et appliquer des sanctions aux pays contrevenants. Appeler à une révision rapide du code de conduite des députés européens et surveiller l'activité des anciens députés"
+
+#: .\populate_vote_and_position_tables.py:153
+msgid "Increase capacity of the Frontex european agency to search and rescue migrants at sea, and to fight against criminal smugglers and human traffickers. The voted text also give feedback regarding specific situations in Greece, Lithuania and Hungary"
+msgstr "Augmenter la capacité de l'agence européenne Frontex pour rechercher et secourir les migrants en mer, et lutter contre les passeurs criminels et les trafiquants d'êtres humains. Le texte fait aussi des retours concernant des situations spécifiques en Grèce, en Lituanie et en Hongrie"
+
+#: .\populate_vote_and_position_tables.py:161
+msgid "Regarding the EU CO₂ emissions trading system, phase out the free allowances to the aviation sector by 2026 while promoting the use of sustainable aviation fuels"
+msgstr "Concernant le système d'échange de quotas d'émission de CO₂ de l'UE, éliminer progressivement les allocations gratuites au secteur de l'aviation d'ici 2026 tout en promouvant l'utilisation de carburants aéronautiques durables"
+
+#: .\populate_vote_and_position_tables.py:170
+msgid "Foster the development of small modular reactors (SMRs) for nuclear electricity production"
+msgstr "Encourager le développement de petits réacteurs modulaires (SMR) pour la production d'électricité nucléaire"
+
+#: .\populate_vote_and_position_tables.py:178
+msgid "Calls on Member States to introduce solidarity taxes on high levels of wealth to provide for funding to mitigate the major challenges of our times; supports calls to start international-level discussions to establish a progressive wealth tax"
+msgstr "Appelle les États membres à introduire des prélèvements solidaires sur les niveaux élevés de richesse pour fournir un financement afin d'atténuer les grands défis de notre époque; soutient les appels à engager des discussions au niveau international pour établir un impôt sur la fortune progressif"
+
+#: .\yvm\forms.py:6 .\yvm\templates\yvm\index.html:25
+msgid "Select a country"
+msgstr "Sélectionner un pays"
+
+#: .\yvm\forms.py:7 .\yvm\templates\yvm\index.html:26
+msgid "Austria"
+msgstr "Autriche"
+
+#: .\yvm\forms.py:8 .\yvm\templates\yvm\index.html:27
+msgid "Belgium"
+msgstr "Belgique"
+
+#: .\yvm\forms.py:9 .\yvm\templates\yvm\index.html:28
+msgid "Bulgaria"
+msgstr "Bulgarie"
+
+#: .\yvm\forms.py:10 .\yvm\templates\yvm\index.html:29
+msgid "Croatia"
+msgstr "Croatie"
+
+#: .\yvm\forms.py:11 .\yvm\templates\yvm\index.html:30
+msgid "Cyprus"
+msgstr "Chypre"
+
+#: .\yvm\forms.py:12 .\yvm\templates\yvm\index.html:31
+msgid "Czechia"
+msgstr "Tchéquie"
+
+#: .\yvm\forms.py:13 .\yvm\templates\yvm\index.html:32
+msgid "Denmark"
+msgstr "Danemark"
+
+#: .\yvm\forms.py:14 .\yvm\templates\yvm\index.html:33
+msgid "Estonia"
+msgstr "Estonie"
+
+#: .\yvm\forms.py:15 .\yvm\templates\yvm\index.html:34
+msgid "Finland"
+msgstr "Finlande"
+
+#: .\yvm\forms.py:16 .\yvm\templates\yvm\index.html:35
+msgid "France"
+msgstr "France"
+
+#: .\yvm\forms.py:17 .\yvm\templates\yvm\index.html:36
+msgid "Germany"
+msgstr "Allemagne"
+
+#: .\yvm\forms.py:18 .\yvm\templates\yvm\index.html:37
+msgid "Greece"
+msgstr "Grèce"
+
+#: .\yvm\forms.py:19 .\yvm\templates\yvm\index.html:38
+msgid "Hungary"
+msgstr "Hongrie"
+
+#: .\yvm\forms.py:20 .\yvm\templates\yvm\index.html:39
+msgid "Ireland"
+msgstr "Irlande"
+
+#: .\yvm\forms.py:21 .\yvm\templates\yvm\index.html:40
+msgid "Italy"
+msgstr "Italie"
+
+#: .\yvm\forms.py:22 .\yvm\templates\yvm\index.html:41
+msgid "Latvia"
+msgstr "Lettonie"
+
+#: .\yvm\forms.py:23 .\yvm\templates\yvm\index.html:42
+msgid "Lithuania"
+msgstr "Lituanie"
+
+#: .\yvm\forms.py:24 .\yvm\templates\yvm\index.html:43
+msgid "Luxembourg"
+msgstr "Luxembourg"
+
+#: .\yvm\forms.py:25 .\yvm\templates\yvm\index.html:44
+msgid "Malta"
+msgstr "Malte"
+
+#: .\yvm\forms.py:26 .\yvm\templates\yvm\index.html:45
+msgid "Netherlands"
+msgstr "Pays-Bas"
+
+#: .\yvm\forms.py:27 .\yvm\templates\yvm\index.html:46
+msgid "Poland"
+msgstr "Pologne"
+
+#: .\yvm\forms.py:28 .\yvm\templates\yvm\index.html:47
+msgid "Portugal"
+msgstr "Portugal"
+
+#: .\yvm\forms.py:29 .\yvm\templates\yvm\index.html:48
+msgid "Romania"
+msgstr "Roumanie"
+
+#: .\yvm\forms.py:30 .\yvm\templates\yvm\index.html:49
+msgid "Slovakia"
+msgstr "Slovaquie"
+
+#: .\yvm\forms.py:31 .\yvm\templates\yvm\index.html:50
+msgid "Slovenia"
+msgstr "Slovénie"
+
+#: .\yvm\forms.py:32 .\yvm\templates\yvm\index.html:51
+msgid "Spain"
+msgstr "Espagne"
+
+#: .\yvm\forms.py:33 .\yvm\templates\yvm\index.html:52
+msgid "Sweden"
+msgstr "Suède"
+
+#: .\yvm\templates\yvm\about.html:8
+msgid "About"
+msgstr "À propos"
+
+#: .\yvm\templates\yvm\about.html:10
+msgid "This website is a citizen project (i.e. carried out on leisure time) built with the goal to help people to make better decisions."
+msgstr "Ce site web est un projet citoyen (c'est-à-dire réalisé sur du temps libre) dont le but est d'aider les gens à prendre de meilleures décisions."
+
+#: .\yvm\templates\yvm\about.html:12 .\yvm\templates\yvm\summary.html:235
+msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by a human being."
+msgstr "Ce site web vous permet de voir les votes des député.e.s européens de la législature 2019-2024 sur 17 votes récents qui ont sélectionnés et résumés par un être humain."
+
+#: .\yvm\templates\yvm\about.html:14
+msgid "The idea came from"
+msgstr "L'idée vient de"
+
+#: .\yvm\templates\yvm\about.html:16
+msgid ", a website built by the votewatch.eu team for the 2019 elections"
+msgstr ", un site web créé pour les élections de 2019 par l'équipe de votewatch.eu"
+
+#: .\yvm\templates\yvm\about.html:19
+msgid "The code is available on github"
+msgstr "Le code est disponible sur github"
+
+#: .\yvm\templates\yvm\about.html:22
+msgid "The data of the votes come from"
+msgstr "Les données de votes viennent de"
+
+#: .\yvm\templates\yvm\about.html:26
+msgid "The global design was deeply inspired on"
+msgstr "Le design global a été profondément inspiré par"
+
+#: .\yvm\templates\yvm\about.html:31
+msgid "was really helpful for building this website"
+msgstr "a été vraiment utile pour créer ce site"
+
+#: .\yvm\templates\yvm\about.html:34
+msgid "The picture of the hemicycle on the index page was shot by Fred Marvaux"
+msgstr "La photo de l'hémicycle sur la page d'accueil a été prise par Fred Marvaux"
+
+#: .\yvm\templates\yvm\about.html:35
+msgid "source"
+msgstr "source"
+
+#: .\yvm\templates\yvm\about.html:38
+msgid "The website is hosted by o2switch in Clermont-Ferrand, France"
+msgstr "Le site est hébergé par o2switch à Clermont-Ferrand, France"
+
+#: .\yvm\templates\yvm\about.html:43
+msgid "We use"
+msgstr "Nous utilisons"
+
+#: .\yvm\templates\yvm\about.html:45
+msgid "to know the traffic statistics"
+msgstr "pour avoir les statistiques de trafic"
+
+#: .\yvm\templates\yvm\about.html:48
+msgid "Thanks to all these projects and people"
+msgstr "Merci à tous les auteurs de ces projets"
+
+#: .\yvm\templates\yvm\about.html:51
+msgid "You can contact us at:"
+msgstr "Vous pouvez nous contacter sur:"
+
+#: .\yvm\templates\yvm\index.html:10
+msgid "Be ready for the European elections of June 2024"
+msgstr "Soyez prêt pour les élections européennes de juin 2024"
+
+#: .\yvm\templates\yvm\index.html:13
+msgid "Find out how the current Members of the European Parliament voted on 17 key recent votes"
+msgstr "Découvrez comment les députés européens ont voté sur 17 votes récents"
+
+#: .\yvm\templates\yvm\summary.html:13
+msgid "flag"
+msgstr "drapeau"
+
+#: .\yvm\templates\yvm\summary.html:29
+msgid "Text"
+msgstr "Texte"
+
+#: .\yvm\templates\yvm\summary.html:44
+msgid "summary"
+msgstr "résumé"
+
+#: .\yvm\templates\yvm\summary.html:48
+msgid "debate"
+msgstr "débat"
+
+#: .\yvm\templates\yvm\summary.html:62
+msgid "Filter by stance"
+msgstr "Filtrer par position"
+
+#: .\yvm\templates\yvm\summary.html:65
+msgid "The selection of MEPs displayed below is the result of your choices on the 17 votes"
+msgstr "La sélection de députés affichée ci-dessous est le résultat de vos choix sur les 17 votes"
+
+#: .\yvm\templates\yvm\summary.html:67
+msgid "Your selections by stance are stored on your device with cookies"
+msgstr "Vos sélections par position sont stockées sur votre appareil avec des cookies"
+
+#: .\yvm\templates\yvm\summary.html:72
+msgid "reset all choices"
+msgstr "réinitialiser tous les choix"
+
+#: .\yvm\templates\yvm\summary.html:92
+msgid "Filter by name or party"
+msgstr "Filtrer par nom ou parti"
+
+#: .\yvm\templates\yvm\summary.html:104
+msgid "MEPs selected"
+msgstr "députés sélectionnés"
+
+#: .\yvm\templates\yvm\summary.html:169
+msgid "MEPs deselected"
+msgstr "députés désélectionnés"
+
+#: .\yvm\templates\yvm\summary.html:236
+msgid "Navigate between each text with the << and >> buttons."
+msgstr "Passez d'un texte à l'autre avec les boutons << et >>."
+
+#: .\yvm\templates\yvm\summary.html:237
+msgid "For each text, you can set the stance of yours by toggling the [?] button, and it will filter out the MEP who didn't vote as you."
+msgstr "Pour chaque texte, vous pouvez indiquer votre position avec le bouton [?] et cela désélectionnera les députés qui n'ont pas voté comme vous."
+
+#: .\yvm\templates\yvm\summary.html:238
+msgid "This selection of MEPs is the result of your choices on the 17 votes."
+msgstr "La sélection de députés est le résultat de vos choix sur les 17 votes."
+
+#: .\yvm\templates\yvm\summary.html:239
+msgid "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."
+msgstr "Au fur et à mesure que vous avancez dans les textes, la sélection devrait se réduire, indiquant finalement les députés qui vous correspondent le mieux."
+
+#: .\yvm\templates\yvm\summary.html:241
+msgid "Click on the button"
+msgstr "Cliquez sur le bouton"
+
+#: .\yvm\templates\yvm\summary.html:243
+msgid "to get statistics by party and country on this vote."
+msgstr "pour accéder à des statistiques par parti et par pays."
+
+#: .\yvm\templates\yvm\summary.html:245
+msgid "Keep in mind that the newcomers MEPs may also be interesting although they are not shown here."
+msgstr "N'oubliez pas que les nouveaux députés européens peuvent également être intéressants même s'ils ne sont pas affichés ici"
+
+#: .\yvm\templates\yvm\summary.html:246
+msgid "Also, your best match may not stand for re-election."
+msgstr "Aussi, certains députés ne vont pas se représenter aux élections de juin 2024."
+
+#: .\yvm\templates\yvm\summary.html:248
+msgid "If you want to see the MEPs votes for other texts, you can search for them on"
+msgstr "Si vous voulez voir les votes des députés sur d'autres textes, vous pouvez les chercher sur"
+
+#: .\yvm\templates\yvm\summary.html:250
+msgid "or on"
+msgstr "ou sur"
+
+#~| msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by a human being."
+#~ msgid "It enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by a human being."
+#~ msgstr "Ce site web vous permet de voir les votes des député.e.s européens de la législature 2019-2024 sur 17 votes récents qui ont sélectionnés et résumés par un être humain."
+
+#~ msgid "It was funded by no one."
+#~ msgstr "Il n'a été financé par personne."

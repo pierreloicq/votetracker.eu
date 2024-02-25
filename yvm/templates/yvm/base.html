@@ -1,0 +1,62 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'yvm/style.css' %}">
+{% load i18n %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="VoteTracker.eu" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://votetracker.eu/" />
+	{% get_current_language as LANGUAGE_CODE %}
+	<meta property="og:image" content="{% static 'yvm/images/exemple_'|add:LANGUAGE_CODE|add:'.jpg' %}" />
+
+	<meta property="og:description" content="{% translate 'Find out how the current Members of the European Parliament voted on 17 key recent votes' %}" />
+	<meta name="description" content="{% translate 'Find out how the current Members of the European Parliament voted on 17 key recent votes' %}" />
+	
+	<title>VoteTracker.eu</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="icon" type="image/svg+xml" href="{% static 'yvm/images/favicon.svg' %}">
+</head>
+<body>
+	{% block nav %}
+		<nav class="level py-1 mb-0 is-flex greyBorderBottom" 
+			role="navigation" aria-label="header with logo and language selector">
+			<h1 class="title is-4 pl-4 mb-0">
+				<a href="/">VoteTracker.eu</a>
+			</h1>
+			<div class="pr-6">
+				{% include 'yvm/language_selection.html' %}
+			</div>
+		</nav>
+	{% endblock %}
+
+	<main>
+		{% block main %}{% endblock %}
+	</main>
+
+	<!-- <footer>
+		<div class="has-text-centered">
+			<a href="/about">About</a>
+		</div>
+	</footer> -->
+
+	<!-- <footer class="level greyBorderTop">
+		<div class="level-item">
+			<a href="/about">About</a>
+		</div>
+	</footer> -->
+	
+	<footer class="greyBorderTop has-text-centered">
+		<a href="/about">About</a>
+	</footer>
+
+	<script data-goatcounter="https://votetracker.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+</body>
+</html>
+

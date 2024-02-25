@@ -1,0 +1,5 @@
+bubble: ionic.io
+favicon: modified from a google icon
+help : help-circle-outline from ionic.io
+external : link-external-small-ltr-progressive, Wikipedia
+thumbUp : ionic.io

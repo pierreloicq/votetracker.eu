@@ -1,0 +1,269 @@
+{% extends "yvm/base.html" %}
+{% load i18n %}
+{% load static %}
+{% load custom_filters %}
+
+{% block main %}
+    <!-- {# for dev, to see the shape of the table, display {{ df|safe }} here and output df.to_html() in bycountryAllTexts() in views.py #} -->
+
+    <div class="is-flex country_section is-align-items-baseline">
+        <!-- {# country name and flag #} -->
+        <h2 class="subtitle is-4 center_content country_name_flag pt-3">
+            {% translate country %} {{ language_code }}
+            <img class="icon" src="https://fonts.gstatic.com/s/e/notoemoji/15.0/{{ country_code }}/72.png" alt="{% translate country %} {% translate 'flag' %}">
+        </h2>
+
+        <!-- {# interrogation mark icon to access the explaining modal #} -->
+        <span class="icon is-medium help_button">
+            <img src="{% static 'yvm/images/help.svg' %}" alt="help" class="js-modal-trigger" data-target="general_help">
+        </span>
+    </div>
+
+    <!-- {# votes short descriptions #} -->
+    <div class="is-flex is-justify-content-space-between has-text-weight-bold table_header">
+        <button class="button px-0 mx-1 is-focused" id="prevBtn"> << </button>
+            <!-- {# header : (0:'vote__short_desc', 1:'vote__vote_id', 2:'vote__summary_url', 
+                               3:'vote__procedure_url', 4:'vote__vote_date', 5:'vote__vote_number', 6:'vote_debate_url') #} -->
+            {% for header in df.columns %}
+                <span colspan="3" class="has-text-centered coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
+                    [{% translate "Text" %} {{ forloop.counter }}/17] {% translate header.0|safe %}
+                </span>
+            {% endfor %}
+        <button class="button px-0 mx-1 is-focused" id="nextBtn"> >> </button>
+    </div>
+    <table class="table center_content table_body_width">
+        <thead>
+            <tr>
+                <!-- {# labels #} -->
+                {% for header in df.columns %}
+                    <th colspan="3" class="has-text-centered coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
+                        <span class="tag">
+                            {{ header.4|date:"d/m/Y" }}
+                        </span>
+                        <span class="tag">
+                            <a href="{{ header.2|translate_URL }}" target="_blank" class="py-2 external">{% translate "summary" %}</a>
+                        </span>
+                        {% if header.6 %}
+                            <span class="tag">
+                                <a href="{{ header.6|translate_URL }}" target="_blank" class="external">{% translate "debate" %}</a>   
+                            </span>
+                        {% endif %}
+                        {% if header.1 %}
+                            <span class="tag">
+                                <a href="https://mepwatch.eu/9/vote.html?v={{ header.1 }}" target="_blank" class="external">mepwatch.eu</a>   
+                            </span>
+                        {% endif %}
+                    </th> 
+                {% endfor %}
+            </tr>
+            <!-- your choice row  -->
+            <tr>
+                <td colspan="2">
+                    <b>{% translate 'Filter by stance' %}</b>
+                    <br>
+                    <span class="is-size-7">
+                        <!-- {% translate "The selection of MEPs displayed below is the result of your choices on the 17 votes" %} -->
+                        <!-- <br> -->
+                        {% translate "Your selections by stance are stored on your device with cookies" %}
+                        <br>
+                    </span>
+
+                    <button class="button is-warning is-small px-1 py-0 my-2 resetChoicesBtn" onclick="resetStanceChoices()" style="height:1rem">
+                        {% translate "reset all choices" %}
+                    </button>
+                </td>
+                <!-- {# thumb button #} -->
+                {% for header in df.columns %}
+                    <td class="coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
+                        <button class="button toggleButton is-focused">
+                            <div class="toggleContent icon">
+                                <img src="{% static 'yvm/images/thumbUp.svg' %}" class="toggleImage thumb_none col_{{ forloop.counter }}_set" alt="click to change your choice regarding this topic">
+                                <span class="toggleText has-text-weight-bold is-size-4">?</span>
+                            </div>
+                        </button>
+                    </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <!-- search box -->
+                    <div class="filter-container">
+                        <input type="text" id="filterInput" class="input mb-0 bottom_aligned is-small"
+                                placeholder="{% translate 'Filter by name or party' %}">
+                        <button id="clearFilterButton">&times;</button>
+                    </div>
+                </th>
+                <!-- {# just add a row for every vote to keep the table shape #} -->
+                {% for header in df.columns %}
+                    <th class="coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
+                    </th>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th colspan="3" class="has-text-centered">
+                    <span id="filteredRowCount_summary_tbody">{{ nb_mep }}</span> {% translate "MEPs selected" %}
+                </th>
+            </tr>
+        </thead>
+        
+        <tbody  id="summary_tbody">
+            {% for index, row in df.iterrows %}
+                {# indices of the index: 0: mep__fullname, 1: mep__national_party, 2:mep__photo_url, 3:mep__eur_page_url, 4:mep__eur_group_short #}
+                <tr class="votes_rows mb-6">
+                    <!-- {# MEP photo #} -->
+                    <td class="photo_column">
+                        <figure class="image">
+                            <img src="{{ index.2 }}" alt="photo MEP" style="width: 50px; min-width: 50px;">
+                        </figure>
+                    </td>
+                    <!-- {# MEP party and group #} -->
+                    <td class="tableCell">
+                        <b><a href="{{ index.3 }}" target="_blank">{{index.0}}</a></b>
+                        <br>
+                        {{ index.1 }}
+                        <br>
+                        <span class="icon-text">
+                            <span>{{ index.4 }}</span>
+                            <span class="tooltip_container">
+                                <span class="icon is-small">
+                                    <img src="{% static 'yvm/images/help.svg' %}" alt="[?]">
+                                </span>
+                                <span class="tooltip eu_party">{{index.5}}</span>
+                            </span>
+                        </span>
+                    </td>
+
+                    {% for stance, comment in row %}
+                        <td class="coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
+                            <!-- {# stance icon #} -->
+                            <div class="icon">
+                                {% if stance|truncatechars:"3" != "nan" %}
+                                        <img src="{% static 'yvm/images/thumbUp.svg' %}" class="thumb_{{stance}} col_{{ forloop.counter }}" alt="thumb_{{stance}}">
+                                {% else %}
+                                        <span class="thumb_NA col_{{ forloop.counter }}">NA</span>
+                                {% endif %}
+                            </div>
+                            <!-- {# bubble to show the comment if present #} -->
+                            <div class="icon">
+                                {% if comment != "" and comment|truncatechars:"3" != "nan" %}
+                                    <span class="tooltip_container">
+                                        <span class="icon">
+                                            <img src="{% static 'yvm/images/bubble.svg' %}" alt="click to see the comment given by the MEP">
+                                        </span>
+                                        <span class="tooltip tooltip_comment">{{ comment }}</span>
+                                    </span> 
+                                {% endif %}
+                            </div>
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- {# 2nd table with the sorted out MEPs #} -->
+    <table class="table center_content table_body_width mb-6">
+        <thead id="x_mep_deselected_header">
+            <tr>
+                <th colspan="3" class="has-text-centered">
+                    <span id="filteredRowCount_sortedOut_tbody">0</span> {% translate "MEPs deselected" %}
+                </th> 
+            </tr>
+        </thead>
+        
+        <tbody id="sortedOut_tbody" class="deselected_rows">
+            {% for index, row in df.iterrows %}
+                {# indices of the index: 0: mep__fullname, 1: mep__national_party, 2:mep__photo_url, 3:mep__eur_page_url, 4:mep__eur_group_short #}
+                <tr class="votes_rows mb-6">
+                    <!-- {# MEP photo #} -->
+                    <td class="photo_column">
+                        <figure class="image">
+                            <img src="{{ index.2 }}" alt="photo MEP" style="width: 50px; min-width: 50px;">
+                        </figure>
+                    </td>
+                    <!-- {# MEP party and group #} -->
+                    <td class="tableCell">
+                        <b><a href="{{ index.3 }}" target="_blank">{{index.0}}</a></b>
+                        <br>
+                        {{ index.1 }}
+                        <br>
+                        <span class="icon-text">
+                            <span>{{ index.4 }}</span>
+                            <span class="tooltip_container">
+                                <span class="icon is-small">
+                                    <img src="{% static 'yvm/images/help.svg' %}" alt="[?]">
+                                </span>
+                                <span class="tooltip eu_party">{{index.5}}</span>
+                            </span>
+                        </span>
+                    </td>
+
+                    {% for stance, comment in row %}
+                        <td class="coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
+                            <!-- {# stance icon #} -->
+                            <div class="icon">
+                                {% if stance|truncatechars:"3" != "nan" %}
+                                        <img src="{% static 'yvm/images/thumbUp.svg' %}" class="thumb_{{stance}} col_{{ forloop.counter }}" alt="thumb_{{stance}}">
+                                {% else %}
+                                        <span class="thumb_NA col_{{ forloop.counter }}">NA</span>
+                                {% endif %}
+                            </div>
+                            <!-- {# bubble to show the comment if present #} -->
+                            <div class="icon">
+                                {% if comment != "" and comment|truncatechars:"3" != "nan" %}
+                                    <span class="tooltip_container">
+                                        <span class="icon">
+                                            <img src="{% static 'yvm/images/bubble.svg' %}" alt="click to see the comment given by the MEP">
+                                        </span>
+                                        <span class="tooltip tooltip_comment">{{ comment }}</span>
+                                    </span> 
+                                {% endif %}
+                            </div>
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- {# help modal #} -->
+    <div id="general_help" class="modal">
+        <div class="modal-background"></div>
+      
+        <div class="modal-content">
+          <div class="box">
+            <p>{% translate "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by a human being."%}</p>
+            <p>{% translate "Navigate between each text with the << and >> buttons."%}</p>
+            <p>{% translate "For each text, you can set the stance of yours by toggling the [?] button, and it will filter out the MEP who didn't vote as you."%}</p>
+            <p>{% translate "This selection of MEPs is the result of your choices on the 17 votes."%}</p>
+            <p>{% translate "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."%}</p>
+            <p>
+                {% translate "Click on the button"%}
+                <span class="tag has-text-link has-text-weight-bold">mepwatch.eu</span>
+                {% translate "to get statistics by party and country on this vote."%}
+            </p>
+            <p>{% translate "Keep in mind that the newcomers MEPs may also be interesting although they are not shown here." %}</p>
+            <p>{% translate "Also, your best match may not stand for re-election." %}</p>
+            <p>
+                {% translate "If you want to see the MEPs votes for other texts, you can search for them on" %}
+                <b><a href="https://howtheyvote.eu/" target="_blank">howtheyvote.eu</a></b>
+                {% translate "or on" %}
+                <b><a href="https://mepwatch.eu/" target="_blank">mepwatch.eu</a></b>
+            </p>
+          </div>
+        </div>
+      
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+
+    <script src="{% static 'yvm/summary.js' %}"></script>
+{% endblock %}
+
+
+
+
+
+
+
