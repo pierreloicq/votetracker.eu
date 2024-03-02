@@ -88,7 +88,7 @@ msgstr "Appelle les États membres à introduire des prélèvements solidaires s
 
 #: .\yvm\forms.py:6 .\yvm\templates\yvm\index.html:25
 msgid "Select a country"
-msgstr "Sélectionner un pays"
+msgstr "Sélectionnez un pays"
 
 #: .\yvm\forms.py:7 .\yvm\templates\yvm\index.html:26
 msgid "Austria"

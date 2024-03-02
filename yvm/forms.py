@@ -1,9 +1,10 @@
 from django import forms
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 
 class CountrySelectionForm(forms.Form):
+    # just the values on the left are useful here, since the display form is in the html
+    # which was easier to style it with css and maybe to get instant country translations
     country_choices = [
-        ('', _('Select a country')),
         ('Austria', _('Austria')),
         ('Belgium', _('Belgium')),
         ('Bulgaria', _('Bulgaria')),
@@ -33,9 +34,6 @@ class CountrySelectionForm(forms.Form):
         ('Sweden', _('Sweden'))
     ]
 
-    country = forms.ChoiceField(choices=country_choices, required=True, 
-                                widget=forms.Select(attrs={#'class': 'form-select w-100', 
-                                                           'aria-label': 'select the country where you vote'})
-                                )
+    country = forms.ChoiceField(choices=country_choices, required=True)
 
 

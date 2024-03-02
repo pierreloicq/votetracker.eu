@@ -53,16 +53,15 @@ country_codes = {
 }
 
 def index(request):
-    if request.method == 'GET':
-        countryform = CountrySelectionForm(request.GET)
-        if countryform.is_valid():
-            country = countryform.cleaned_data['country']
-            url = reverse('bycountryAllTexts') + f'?country={country}'
-            return redirect(url)
+    countryform = CountrySelectionForm(request.GET)
+    if countryform.is_valid():
+        # a country has been selected
+        country = countryform.cleaned_data['country']
+        url = reverse('bycountryAllTexts') + f'?country={country}'
+        return redirect(url)
     else:
-        countryform = CountrySelectionForm()
-
-    return render(request, 'yvm/index.html', {'countryform': countryform})
+        countryform.fields['country'].choices = sorted(countryform.fields['country'].choices, key=lambda x: x[1])
+        return render(request, 'yvm/index.html', {'countryform': countryform})
 
 
 def bycountryAllTexts(request):
@@ -94,7 +93,7 @@ def bycountryAllTexts(request):
     # df = replaceLanguageCodes(df)
     
     # print(df[['vote__summary_url', 'vote__procedure_url']])
-    # print(df.query("mep__fullname == 'François-Xavier BELLAMY'"))
+    # print(df.query("mep__fullname == 'mep_name'"))
 
     # output  {short_desc -> {mep__fullname -> comment}}
     # dict_comm = df0.pivot(index=['mep__fullname'], columns=['vote__short_desc'], values="comment").to_dict() 
