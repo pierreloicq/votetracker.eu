@@ -234,29 +234,56 @@
           <div class="box">
             <p>{% translate "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by a human being."%}</p>
             <p>{% translate "Navigate between each text with the << and >> buttons."%}</p>
-            <p>{% translate "For each text, you can set the stance of yours by toggling the [?] button, and it will filter out the MEP who didn't vote as you."%}</p>
-            <p>{% translate "This selection of MEPs is the result of your choices on the 17 votes."%}</p>
+            <p>
+                <span class="icon is-small">
+                    <img src="{% static 'yvm/images/thumbUp.svg' %}" class="thumb_for" alt="thumb_for">
+                </span>
+                = {% translate "in favor" %}
+                <br>
+                <span class="icon is-small">
+                    <img src="{% static 'yvm/images/thumbUp.svg' %}" class="thumb_ag" alt="thumb_ag">
+                </span>
+                = {% translate "against" %}
+                <br>
+                <span class="icon is-small">
+                    <img src="{% static 'yvm/images/thumbUp.svg' %}" class="thumb_abs" alt="thumb_abs">
+                </span>
+                = {% translate "abstention" %}
+                <br>
+                NA = {% translate "didn't vote. It may be because the MEP was not in function at the time of the vote." %}
+            </p>
+            <p>{% translate "For each text, you can set the stance of yours by toggling the [?] button, and it will filter out the MEP who voted the opposite."%}</p>
+            <p>{% translate "This selection of MEPs shown below is the result of your choices on the 17 votes."%}</p>
             <p>{% translate "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."%}</p>
+            <p>{% translate "Don't take the result too much for granted. Some MEP may be in the final results because they didn't vote on some texts."%}</p>
             <p>
                 {% translate "Click on the button"%}
                 <span class="tag has-text-link has-text-weight-bold">mepwatch.eu</span>
                 {% translate "to get statistics by party and country on this vote."%}
             </p>
-            <p>{% translate "Keep in mind that the newcomers MEPs may also be interesting although they are not shown here." %}</p>
-            <p>{% translate "Also, your best match may not stand for re-election." %}</p>
+            <p>
+                {% translate "Keep in mind that the newcomers MEPs may also be interesting although they are not shown here." %}
+                {% translate "Also, your best match may not stand for re-election." %}</p>
             <p>
                 {% translate "If you want to see the MEPs votes for other texts, you can search for them on" %}
                 <b><a href="https://howtheyvote.eu/" target="_blank">howtheyvote.eu</a></b>
                 {% translate "or on" %}
                 <b><a href="https://mepwatch.eu/" target="_blank">mepwatch.eu</a></b>
             </p>
+            <p>
+                {% translate "Other voting advice applications that consider all persons standing for elections are available here:" %}
+                <br>
+                    {% if country == 'France' %}
+                            <b><a href="https://www.candidator.fr/" target="_blank">candidator.fr</a></b>
+                            <br>
+                    {% endif %}
+                        <b><a href="https://linktr.ee/adeno.eu" target="_blank">Adeno app</a></b>
+            </p>
           </div>
         </div>
       
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
-
-
 
     <script src="{% static 'yvm/summary.js' %}"></script>
 {% endblock %}
