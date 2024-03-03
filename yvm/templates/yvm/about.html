@@ -6,17 +6,17 @@
 {% block main %}
     <div class="table_body_width center_content has-text-centered py-6">
         <h2 class="title is-3">{% translate "About" %}</h2>
-        <p>
-            {% translate "This website is a citizen project (i.e. carried out on leisure time) built with the goal to help people to make better decisions." %}
-        </p>
-        <p>{% translate "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by a human being."%}</p>
+        <p>{% translate "Hi, I'm Pierre, the creator of this website. I built it in my spare time with the goal of helping people make better decisions." %}</p>
+
+        <p>{% translate "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by myself."%}</p>
         <p>
             {% translate "The idea came from" %}
             <a href="http://web.archive.org/web/20201230133428/https://www.yourvotematters.eu/en/" target="_blank">
-                yourvotematters.eu (archive)</a>{% translate ", a website built by the votewatch.eu team for the 2019 elections" %}
+                yourvotematters.eu (archive)</a>{% translate ", a website built by the votewatch.eu team for the 2019 elections" %}.
         </p>
         <p>
-            {% translate "The code is available on github" %}
+            {% translate "The code is available on" %} <a href="https://github.com/pierreloicq/votetracker.eu" target="_blank">github</a>. 
+            {% translate "You are welcome to take it and adapt it to other jurisdictions." %}
         </p>
         <p>
             {% translate "The data of the votes come from" %}
@@ -40,7 +40,7 @@
             <span class="has-text-grey-light">(Chemin des Pardiaux 63000 Clermont-Ferrand - SIRET 510 909 80700024 - +33 4 44 44 60 40)</span>
         </p>
         <p>
-            {% translate "We use"  %}
+            {% translate "I use"  %}
             <a href="https://goatcounter.com" target="_blank">goatcounter.com</a>
             {% translate "to know the traffic statistics" %}
         </p>
@@ -48,7 +48,7 @@
             {% translate "Thanks to all these projects and people" %} 
         </p>
         <p>
-            {% translate "You can contact us at:" %}
+            {% translate "You can contact me at:" %}
             <img src="{% static 'yvm/images/email.png' %}" alt="email address provided as an image to avoid spammers"> 
         </p>
     </div>

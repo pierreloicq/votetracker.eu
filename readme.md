@@ -1,11 +1,31 @@
+This is the readme to contribute to the [votetracker.eu](https://votetracker.eu) project.
+
+### Translations 
+
+To add translations, run
+```
+django-admin makemessages --no-wrap --locale <locale id like "fr" or "en">
+```
+It will generate a .po file in the `locale` directory.
+The translation are to be written inside the quotes of the `msgstr ""`.
+Look also for the `fuzzy` keyword that point to unclear translations.
+The `&#37;` that you can find is the html code for `%`. Use `&#37;` instead of `%`, which is a mess to use here.
+When it is translated, add the language code in the `LANGUAGES` variable in settings.py
+
+Then run 
+```
+django-admin compilemessages
+```
+
+Restart the server and check everything is ok.
+Do the merge request.
+Thanks :-)
 
 
-This is the readme to contribute to the [votetracker.eu](https://votetracker.eu) project
+### Make it work on local computer
 
 It is built with python django. 
-The database is needed because MEPs have the ability to add comments on their stances (when the text list will be fixed and when they will be invited to).
-
-### Create development environment
+The database is needed because MEPs have the ability to add comments on their stances (when they will be invited to).
 
 If you use conda:
 ```
@@ -47,24 +67,8 @@ Then
 python manage.py runserver
 ```
 
-### Translations 
 
-To add translations, run
-```
-django-admin makemessages --no-wrap --locale <locale id like "fr" or "en">
-```
-It will generate a .po file in the `locale` directory.
-The translation are to be written inside the quotes of the `msgstr ""`.
-Look also for the `fuzzy` keyword that point to unclear translations.
-The `&#37;` that you can find is the html code for `%`. Use `&#37;` instead of `%`, which is a mess to use here.
-When it is translated, add the language code in the `LANGUAGES` variable in settings.py
+### License
 
-Then run 
-```
-django-admin compilemessages
-```
-
-Restart the server and check everything is ok.
-Do the merge request.
-Thanks :-)
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://votetracker.eu/">votetracker.eu</a> by <span property="cc:attributionName">Pierre LOICQ</span> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-02 22:59+0100\n"
+"POT-Creation-Date: 2024-03-03 17:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,29 +194,33 @@ msgstr "Espagne"
 msgid "Sweden"
 msgstr "Suède"
 
-#: .\yvm\templates\yvm\about.html:8
+#: .\yvm\templates\yvm\about.html:8 .\yvm\templates\yvm\base.html:42
 msgid "About"
 msgstr "À propos"
 
-#: .\yvm\templates\yvm\about.html:10
-msgid "This website is a citizen project (i.e. carried out on leisure time) built with the goal to help people to make better decisions."
-msgstr "Ce site web est un projet citoyen (c'est-à-dire réalisé sur du temps libre) dont le but est d'aider les gens à prendre de meilleures décisions."
+#: .\yvm\templates\yvm\about.html:9 .\yvm\templates\yvm\summary.html:235
+msgid "Hi, I'm Pierre, the creator of this website. I built it in my spare time with the goal of helping people make better decisions."
+msgstr "Bonjour, je suis Pierre, le créateur de ce site web. Je l'ai réalisé sur mon temps libre dans le but d'aider les gens à prendre de meilleures décisions."
 
-#: .\yvm\templates\yvm\about.html:12 .\yvm\templates\yvm\summary.html:235
-msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by a human being."
-msgstr "Ce site web vous permet de voir les votes des député.e.s européens de la législature 2019-2024 sur 17 votes récents qui ont été sélectionnés et résumés par un être humain."
+#: .\yvm\templates\yvm\about.html:11 .\yvm\templates\yvm\summary.html:236
+msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by myself."
+msgstr "Ce site web vous permet de voir les votes des député.e.s européens de la législature 2019-2024 sur 17 votes récents qui ont été sélectionnés et résumés par moi-même."
 
-#: .\yvm\templates\yvm\about.html:14
+#: .\yvm\templates\yvm\about.html:13
 msgid "The idea came from"
 msgstr "L'idée vient de"
 
-#: .\yvm\templates\yvm\about.html:16
+#: .\yvm\templates\yvm\about.html:15
 msgid ", a website built by the votewatch.eu team for the 2019 elections"
 msgstr ", un site web créé pour les élections de 2019 par l'équipe de votewatch.eu"
 
+#: .\yvm\templates\yvm\about.html:18
+msgid "The code is available on"
+msgstr "Le code est disponible sur"
+
 #: .\yvm\templates\yvm\about.html:19
-msgid "The code is available on github"
-msgstr "Le code est disponible sur github"
+msgid "You are welcome to take it and adapt it to other jurisdictions."
+msgstr "Il peut être copié pour être adapté à d'autres juridictions."
 
 #: .\yvm\templates\yvm\about.html:22
 msgid "The data of the votes come from"
@@ -243,8 +247,8 @@ msgid "The website is hosted by o2switch in Clermont-Ferrand, France"
 msgstr "Le site est hébergé par o2switch à Clermont-Ferrand, France"
 
 #: .\yvm\templates\yvm\about.html:43
-msgid "We use"
-msgstr "Nous utilisons"
+msgid "I use"
+msgstr "J'utilise"
 
 #: .\yvm\templates\yvm\about.html:45
 msgid "to know the traffic statistics"
@@ -255,8 +259,8 @@ msgid "Thanks to all these projects and people"
 msgstr "Merci à tous les auteurs de ces projets"
 
 #: .\yvm\templates\yvm\about.html:51
-msgid "You can contact us at:"
-msgstr "Vous pouvez nous contacter sur:"
+msgid "You can contact me at:"
+msgstr "Vous pouvez me contacter sur:"
 
 #: .\yvm\templates\yvm\base.html:17 .\yvm\templates\yvm\base.html:18
 #: .\yvm\templates\yvm\index.html:13
@@ -315,66 +319,66 @@ msgstr "députés sélectionnés"
 msgid "MEPs deselected"
 msgstr "députés désélectionnés"
 
-#: .\yvm\templates\yvm\summary.html:236
+#: .\yvm\templates\yvm\summary.html:237
 msgid "Navigate between each text with the << and >> buttons."
 msgstr "Passez d'un texte à l'autre avec les boutons << et >>."
 
-#: .\yvm\templates\yvm\summary.html:241
+#: .\yvm\templates\yvm\summary.html:242
 msgid "in favor"
 msgstr "pour"
 
-#: .\yvm\templates\yvm\summary.html:246
+#: .\yvm\templates\yvm\summary.html:247
 msgid "against"
 msgstr "contre"
 
-#: .\yvm\templates\yvm\summary.html:251
+#: .\yvm\templates\yvm\summary.html:252
 msgid "abstention"
 msgstr "abstention"
 
-#: .\yvm\templates\yvm\summary.html:253
+#: .\yvm\templates\yvm\summary.html:254
 msgid "didn't vote. It may be because the MEP was not in function at the time of the vote."
 msgstr "n'a pas voté. Possiblement car il/elle n'était pas en fonction au moment du vote."
 
-#: .\yvm\templates\yvm\summary.html:255
+#: .\yvm\templates\yvm\summary.html:256
 msgid "For each text, you can set the stance of yours by toggling the [?] button, and it will filter out the MEP who voted the opposite."
 msgstr "Pour chaque texte, vous pouvez indiquer votre position avec le bouton [?] et cela désélectionnera les députés qui ont voté l'inverse."
 
-#: .\yvm\templates\yvm\summary.html:256
+#: .\yvm\templates\yvm\summary.html:257
 msgid "This selection of MEPs shown below is the result of your choices on the 17 votes."
 msgstr "Cette sélection de députés affichée en-dessous est le résultat de vos choix sur les 17 votes."
 
-#: .\yvm\templates\yvm\summary.html:257
+#: .\yvm\templates\yvm\summary.html:258
 msgid "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."
 msgstr "Au fur et à mesure que vous avancez dans les textes, la sélection devrait se réduire, indiquant finalement les députés qui vous correspondent le mieux."
 
-#: .\yvm\templates\yvm\summary.html:258
+#: .\yvm\templates\yvm\summary.html:259
 msgid "Don't take the result too much for granted. Some MEP may be in the final results because they didn't vote on some texts."
 msgstr "Ne prenez pas le résultat trop pour acquis. Certains députés peuvent être dans le résultat final juste parce qu'ils n'ont pas voté sur certains textes."
 
-#: .\yvm\templates\yvm\summary.html:260
+#: .\yvm\templates\yvm\summary.html:261
 msgid "Click on the button"
 msgstr "Cliquez sur le bouton"
 
-#: .\yvm\templates\yvm\summary.html:262
+#: .\yvm\templates\yvm\summary.html:263
 msgid "to get statistics by party and country on this vote."
 msgstr "pour accéder à des statistiques par parti et par pays."
 
-#: .\yvm\templates\yvm\summary.html:265
+#: .\yvm\templates\yvm\summary.html:266
 msgid "Keep in mind that the newcomers MEPs may also be interesting although they are not shown here."
 msgstr "N'oubliez pas que les nouveaux députés européens peuvent également être intéressants même s'ils ne sont pas affichés ici."
 
-#: .\yvm\templates\yvm\summary.html:266
+#: .\yvm\templates\yvm\summary.html:267
 msgid "Also, your best match may not stand for re-election."
 msgstr "Aussi, certains députés ne vont pas se représenter aux élections de juin 2024."
 
-#: .\yvm\templates\yvm\summary.html:268
+#: .\yvm\templates\yvm\summary.html:269
 msgid "If you want to see the MEPs votes for other texts, you can search for them on"
 msgstr "Si vous voulez voir les votes des députés sur d'autres textes, vous pouvez les chercher sur"
 
-#: .\yvm\templates\yvm\summary.html:270
+#: .\yvm\templates\yvm\summary.html:271
 msgid "or on"
 msgstr "ou sur"
 
-#: .\yvm\templates\yvm\summary.html:274
+#: .\yvm\templates\yvm\summary.html:275
 msgid "Other voting advice applications that consider all persons standing for elections are available here:"
 msgstr "D'autres systèmes d'aide au vote qui considèrent toutes les personnes qui se présentent aux élections:"
