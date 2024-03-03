@@ -108,7 +108,8 @@
         
         <tbody  id="summary_tbody">
             {% for index, row in df.iterrows %}
-                {# indices of the index: 0: mep__fullname, 1: mep__national_party, 2:mep__photo_url, 3:mep__eur_page_url, 4:mep__eur_group_short #}
+                <!-- {# indices of the index: 0: mep__fullname, 1: mep__national_party, 2:mep__photo_url #} -->
+                <!-- {# 3:mep__eur_page_url, 4:mep__eur_group_short #} -->
                 <tr class="votes_rows mb-6">
                     <!-- {# MEP photo #} -->
                     <td class="photo_column">
@@ -122,13 +123,14 @@
                         <br>
                         {{ index.1 }}
                         <br>
+
                         <span class="icon-text">
                             <span>{{ index.4 }}</span>
                             <span class="tooltip_container">
                                 <span class="icon is-small">
                                     <img src="{% static 'yvm/images/help.svg' %}" alt="[?]">
                                 </span>
-                                <span class="tooltip eu_party">{{index.5}}</span>
+                                <span class="tooltip eu_party">{{ eu_party_dict|keyvalue:index.4 }}</span>
                             </span>
                         </span>
                     </td>
@@ -173,7 +175,8 @@
         
         <tbody id="sortedOut_tbody" class="deselected_rows">
             {% for index, row in df.iterrows %}
-                {# indices of the index: 0: mep__fullname, 1: mep__national_party, 2:mep__photo_url, 3:mep__eur_page_url, 4:mep__eur_group_short #}
+                <!-- {# indices of the index: 0: mep__fullname, 1: mep__national_party, 2:mep__photo_url #} -->
+                <!-- {# 3:mep__eur_page_url, 4:mep__eur_group_short #} -->
                 <tr class="votes_rows mb-6">
                     <!-- {# MEP photo #} -->
                     <td class="photo_column">
@@ -193,7 +196,7 @@
                                 <span class="icon is-small">
                                     <img src="{% static 'yvm/images/help.svg' %}" alt="[?]">
                                 </span>
-                                <span class="tooltip eu_party">{{index.5}}</span>
+                                <span class="tooltip eu_party">{{ eu_party_dict|keyvalue:index.4 }}</span>
                             </span>
                         </span>
                     </td>
@@ -258,6 +261,12 @@
             <p>{% translate "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."%}</p>
             <p>{% translate "Don't take the result too much for granted. Some MEP may be in the final results because they didn't vote on some texts."%}</p>
             <p>
+                {% translate "MEPs are invited to explain their stances. If they provide a comment, you can see it by clicking on the"%}
+                <span class="icon is-small">
+                    <img src="/static/yvm/images/bubble.svg" alt="icon used to display the comments given by the MEPs">
+                </span>
+            </p>
+            <p>
                 {% translate "Click on the button"%}
                 <span class="tag has-text-link has-text-weight-bold">mepwatch.eu</span>
                 {% translate "to get statistics by party and country on this vote."%}
@@ -275,7 +284,7 @@
                 {% translate "Other voting advice applications that consider all persons standing for elections are available here:" %}
                 <br>
                     {% if country == 'France' %}
-                            <b><a href="https://www.candidator.fr/" target="_blank">candidator.fr</a></b>
+                            <b><a href="https://www.candidator.fr/" target="_blank">Candidator.fr</a></b>
                             <br>
                     {% endif %}
                         <b><a href="https://linktr.ee/adeno.eu" target="_blank">Adeno app</a></b>

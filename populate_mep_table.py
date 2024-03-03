@@ -27,7 +27,7 @@ mepGroup.save()
 file_path = "parltrack_data/ep_meps.json"
 current_term = 9
 
-mode = 'less_secure' # less_secure | more_secure
+mode = 'more_secure' # less_secure | more_secure
 counter = 0
 with open(file_path, 'r', encoding='utf-8') as file:
     for line in file:

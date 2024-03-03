@@ -2,6 +2,7 @@ from django.contrib import admin, messages
 from .models import Position
 from django.forms import Textarea
 from django.contrib.admin.views.main import ChangeList
+from django.utils.safestring import mark_safe
 
 #configure the general layout
 # https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#customizing-the-adminsite-class
@@ -18,7 +19,7 @@ class MyChangeList(ChangeList):
         if self.is_popup:
             title = "Select %s" % self.opts.verbose_name
         elif self.model_admin.has_change_permission(request):
-            title = "Please select the vote you want to add a comment to. Please write the comments in the language of your voters."
+            title = "Click on the text description to add your comment/explanation. Please write the comments in the language of your voters."
         else:
             title = "Select %s to view" % self.opts.verbose_name
         self.title = title
@@ -28,7 +29,7 @@ class MyChangeList(ChangeList):
 class PositionAdmin(admin.ModelAdmin):
     readonly_fields = ["vote_date", "text_id", "text_part", "summary_url", "procedure_url", "short_desc", "your_stance", "mep"]
     fields =          ["vote_date", "text_id", "text_part", "summary_url", "procedure_url", "short_desc", "your_stance", "mep", "comment"] # you need to put the readonly_fields here too
-    list_display  =   ["text_id", "short_desc", "text_part", "your_stance", "your_comment"] # displayed on the admin change list page
+    list_display  =   ["short_desc", "text_id", "text_part", "your_stance", "your_comment"] # displayed on the admin change list page
 
     # Remove the message shown on the change list after a comment is saved
     def message_user(self, request, message, level=messages.SUCCESS, extra_tags='', fail_silently=False):
@@ -41,7 +42,7 @@ class PositionAdmin(admin.ModelAdmin):
 
     # fetch short_desc in the Vote model    
     def short_desc(self, obj):
-        return obj.vote.short_desc
+        return mark_safe(obj.vote.short_desc)
     
     def vote_date(self, obj):
         return obj.vote.vote_date

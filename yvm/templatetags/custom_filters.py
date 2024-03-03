@@ -11,3 +11,10 @@ def translate_URL(string):
     string = string.replace('lang=en', f"lang={language_code}")
     string = string.replace('_EN', f"_{language_code.upper()}")
     return string
+
+
+
+@register.filter
+def keyvalue(dico, key):
+    return dico.get(key, '')
+

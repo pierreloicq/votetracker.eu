@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-03 17:18+0100\n"
+"POT-Creation-Date: 2024-03-03 20:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,11 +198,11 @@ msgstr "Suède"
 msgid "About"
 msgstr "À propos"
 
-#: .\yvm\templates\yvm\about.html:9 .\yvm\templates\yvm\summary.html:235
+#: .\yvm\templates\yvm\about.html:9 .\yvm\templates\yvm\summary.html:238
 msgid "Hi, I'm Pierre, the creator of this website. I built it in my spare time with the goal of helping people make better decisions."
 msgstr "Bonjour, je suis Pierre, le créateur de ce site web. Je l'ai réalisé sur mon temps libre dans le but d'aider les gens à prendre de meilleures décisions."
 
-#: .\yvm\templates\yvm\about.html:11 .\yvm\templates\yvm\summary.html:236
+#: .\yvm\templates\yvm\about.html:11 .\yvm\templates\yvm\summary.html:239
 msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by myself."
 msgstr "Ce site web vous permet de voir les votes des député.e.s européens de la législature 2019-2024 sur 17 votes récents qui ont été sélectionnés et résumés par moi-même."
 
@@ -315,70 +315,106 @@ msgstr "Filtrer par nom ou parti"
 msgid "MEPs selected"
 msgstr "députés sélectionnés"
 
-#: .\yvm\templates\yvm\summary.html:169
+#: .\yvm\templates\yvm\summary.html:171
 msgid "MEPs deselected"
 msgstr "députés désélectionnés"
 
-#: .\yvm\templates\yvm\summary.html:237
+#: .\yvm\templates\yvm\summary.html:240
 msgid "Navigate between each text with the << and >> buttons."
 msgstr "Passez d'un texte à l'autre avec les boutons << et >>."
 
-#: .\yvm\templates\yvm\summary.html:242
+#: .\yvm\templates\yvm\summary.html:245
 msgid "in favor"
 msgstr "pour"
 
-#: .\yvm\templates\yvm\summary.html:247
+#: .\yvm\templates\yvm\summary.html:250
 msgid "against"
 msgstr "contre"
 
-#: .\yvm\templates\yvm\summary.html:252
+#: .\yvm\templates\yvm\summary.html:255
 msgid "abstention"
 msgstr "abstention"
 
-#: .\yvm\templates\yvm\summary.html:254
+#: .\yvm\templates\yvm\summary.html:257
 msgid "didn't vote. It may be because the MEP was not in function at the time of the vote."
 msgstr "n'a pas voté. Possiblement car il/elle n'était pas en fonction au moment du vote."
 
-#: .\yvm\templates\yvm\summary.html:256
+#: .\yvm\templates\yvm\summary.html:259
 msgid "For each text, you can set the stance of yours by toggling the [?] button, and it will filter out the MEP who voted the opposite."
 msgstr "Pour chaque texte, vous pouvez indiquer votre position avec le bouton [?] et cela désélectionnera les députés qui ont voté l'inverse."
 
-#: .\yvm\templates\yvm\summary.html:257
+#: .\yvm\templates\yvm\summary.html:260
 msgid "This selection of MEPs shown below is the result of your choices on the 17 votes."
 msgstr "Cette sélection de députés affichée en-dessous est le résultat de vos choix sur les 17 votes."
 
-#: .\yvm\templates\yvm\summary.html:258
+#: .\yvm\templates\yvm\summary.html:261
 msgid "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."
 msgstr "Au fur et à mesure que vous avancez dans les textes, la sélection devrait se réduire, indiquant finalement les députés qui vous correspondent le mieux."
 
-#: .\yvm\templates\yvm\summary.html:259
+#: .\yvm\templates\yvm\summary.html:262
 msgid "Don't take the result too much for granted. Some MEP may be in the final results because they didn't vote on some texts."
 msgstr "Ne prenez pas le résultat trop pour acquis. Certains députés peuvent être dans le résultat final juste parce qu'ils n'ont pas voté sur certains textes."
 
-#: .\yvm\templates\yvm\summary.html:261
+#: .\yvm\templates\yvm\summary.html:264
+msgid "MEPs are invited to explain their stances. If they provide a comment, you can see it by clicking on the"
+msgstr "Les députés sont invités à expliquer leurs positions. S'ils fournissent un commentaire, vous pouvez le voir en cliquant sur"
+
+#: .\yvm\templates\yvm\summary.html:270
 msgid "Click on the button"
 msgstr "Cliquez sur le bouton"
 
-#: .\yvm\templates\yvm\summary.html:263
+#: .\yvm\templates\yvm\summary.html:272
 msgid "to get statistics by party and country on this vote."
 msgstr "pour accéder à des statistiques par parti et par pays."
 
-#: .\yvm\templates\yvm\summary.html:266
+#: .\yvm\templates\yvm\summary.html:275
 msgid "Keep in mind that the newcomers MEPs may also be interesting although they are not shown here."
 msgstr "N'oubliez pas que les nouveaux députés européens peuvent également être intéressants même s'ils ne sont pas affichés ici."
 
-#: .\yvm\templates\yvm\summary.html:267
+#: .\yvm\templates\yvm\summary.html:276
 msgid "Also, your best match may not stand for re-election."
 msgstr "Aussi, certains députés ne vont pas se représenter aux élections de juin 2024."
 
-#: .\yvm\templates\yvm\summary.html:269
+#: .\yvm\templates\yvm\summary.html:278
 msgid "If you want to see the MEPs votes for other texts, you can search for them on"
 msgstr "Si vous voulez voir les votes des députés sur d'autres textes, vous pouvez les chercher sur"
 
-#: .\yvm\templates\yvm\summary.html:271
+#: .\yvm\templates\yvm\summary.html:280
 msgid "or on"
 msgstr "ou sur"
 
-#: .\yvm\templates\yvm\summary.html:275
+#: .\yvm\templates\yvm\summary.html:284
 msgid "Other voting advice applications that consider all persons standing for elections are available here:"
 msgstr "D'autres systèmes d'aide au vote qui considèrent toutes les personnes qui se présentent aux élections:"
+
+#: .\yvm\views.py:17
+msgid "Group of the European People's Party (Christian Democrats)"
+msgstr "Groupe du Parti populaire européen (Démocrates-Chrétiens)"
+
+#: .\yvm\views.py:18
+msgid "Group of the Progressive Alliance of Socialists and Democrats"
+msgstr "Groupe de l'Alliance Progressiste des Socialistes et Démocrates au Parlement européen"
+
+#: .\yvm\views.py:19
+msgid "Renew Europe Group"
+msgstr "Groupe Renew Europe"
+
+#: .\yvm\views.py:20
+msgid "European Conservatives and Reformists Group"
+msgstr "Groupe des Conservateurs et Réformistes européens"
+
+#: .\yvm\views.py:21
+msgid "Identity and Democracy Group"
+msgstr "Groupe Identité et démocratie"
+
+#: .\yvm\views.py:22
+msgid "The Left group"
+msgstr "Groupe de la gauche"
+
+#: .\yvm\views.py:23
+msgid "Group of the Greens/European Free Alliance"
+msgstr "Groupe des Verts/Alliance libre européenne"
+
+#: .\yvm\views.py:24
+msgid "Non-Attached Members"
+msgstr "Sans groupe"

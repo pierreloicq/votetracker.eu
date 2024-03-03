@@ -1,25 +1,27 @@
 from django.shortcuts import render, redirect
-from django.utils.translation import activate
-from django.http import Http404
-from django.http import HttpResponse
-from django.http import HttpResponseRedirect
+# from django.utils.translation import activate
+# from django.http import Http404
+# from django.http import HttpResponse
+# from django.http import HttpResponseRedirect
 from django.urls import reverse
-from .models import Mep, Vote, Position
+# from .models import Mep, Vote
+from .models import Position
 from .forms import CountrySelectionForm
 import pandas as pd
 # from django.utils.translation import get_language
+from django.utils.translation import gettext_lazy as _
 
 
 # not used for the moment
 eu_party_dict = {
-    'PPE': 'Group of the European People\'s Party (Christian Democrats)',
-    'S&D': 'Group of the Progressive Alliance of Socialists and Democrats',
-    'RE': 'Renew Europe Group',
-    'ECR': 'European Conservatives and Reformists Group',
-    'ID': 'Identity and Democracy Group',
-    'GUE/NGL': 'Confederal Group of the European United Left - Nordic Green Left',
-    'Verts/ALE': 'Group of the Greens/European Free Alliance',
-    'NA': 'Non-Attached Members',
+    "PPE": _("Group of the European People's Party (Christian Democrats)"),
+    "S&D": _("Group of the Progressive Alliance of Socialists and Democrats"),
+    "RE": _("Renew Europe Group"),
+    "ECR": _("European Conservatives and Reformists Group"),
+    "ID": _("Identity and Democracy Group"),
+    "GUE/NGL": _("The Left group"),
+    "Verts/ALE": _("Group of the Greens/European Free Alliance"),
+    "NA": _("Non-Attached Members"),
 }
 
 country_codes = {
@@ -68,14 +70,14 @@ def bycountryAllTexts(request):
     country = request.GET.get('country')
     allData = Position.objects.filter(mep__country=country).values('mep__fullname', 'mep__national_party', 
                             'vote__short_desc','stance', 'comment', 'mep__photo_url', 
-                            'mep__eu_page_url', 'mep__eu_group_short', 'mep__eu_group_long',
+                            'mep__eu_page_url', 'mep__eu_group_short',
                             'vote__summary_url', 'vote__procedure_url', 'vote__vote_id', 'vote__vote_date', 
                             'vote__vote_number', 'vote__debate_url').order_by('mep__national_party', 'mep__fullname')
     # print(type(allData))
     # print(allData)
     
     df0 = pd.DataFrame.from_records(allData)
-    rows = ['mep__fullname', 'mep__national_party', 'mep__photo_url', 'mep__eu_page_url', 'mep__eu_group_short','mep__eu_group_long']
+    rows = ['mep__fullname', 'mep__national_party', 'mep__photo_url', 'mep__eu_page_url', 'mep__eu_group_short']
     cols = ['vote__short_desc', 'vote__vote_id', 'vote__summary_url', 'vote__procedure_url', 'vote__vote_date', 'vote__vote_number', 
             'vote__debate_url']
     df_stance = df0.pivot(index=rows,  columns=cols, values="stance")
@@ -90,8 +92,6 @@ def bycountryAllTexts(request):
     # without that the order is random
     df = df.sort_index(axis=1, level='vote__vote_number')
 
-    # df = replaceLanguageCodes(df)
-    
     # print(df[['vote__summary_url', 'vote__procedure_url']])
     # print(df.query("mep__fullname == 'mep_name'"))
 
@@ -105,8 +105,8 @@ def bycountryAllTexts(request):
     
     # df = df.to_html(index=True, index_names=True)
     # df_meps = df_meps.to_html(index=True, index_names=True)
-    
+
     #### for dev, to see the shape of the table, output here df.to_html() instead of df and display {{ df|safe }} in summary.html 
     context = {'df':df, 'country':country, 'country_code':country_codes[country], 
-               'nb_mep':df.shape[0], 'nb_votes':len(df.columns) }
+               'nb_mep':df.shape[0], 'nb_votes':len(df.columns), 'eu_party_dict':eu_party_dict}
     return render(request, "yvm/summary.html", context)
