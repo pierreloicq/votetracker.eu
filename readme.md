@@ -2,6 +2,14 @@ This is the readme to contribute to the [votetracker.eu](https://votetracker.eu)
 
 ### Translations 
 
+I can start translating to European languages I don't know with A.I. but I'd like to have human validations. \
+If you are eager to check a translation, please contact me at 
+![email_picture](./yvm/static/yvm/images/email.png), I will send you the necessary file.
+Thank you
+
+
+#### for devs:
+
 To add translations, run
 ```
 django-admin makemessages --no-wrap --locale <locale id like "fr" or "en">
