@@ -161,8 +161,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # AUTH_USER_MODEL = 'yvm.MepUser' # was not working finally
 
 
-# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_BACKEND = config('EMAIL_BACKEND')
+
+if EMAIL_BACKEND == "django.core.mail.backends.console.EmailBackend":
+    print(f"{EMAIL_BACKEND=}")
+elif EMAIL_BACKEND == "django.core.mail.backends.filebased.EmailBackend":
+    EMAIL_FILE_PATH = config('EMAIL_FILE_PATH')
+    with open(f"{EMAIL_FILE_PATH}/backend.txt", 'w') as file:
+        file.write(f"{EMAIL_BACKEND=}")
 
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_PORT = config('EMAIL_PORT')
