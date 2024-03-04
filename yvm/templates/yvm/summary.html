@@ -9,7 +9,7 @@
     <div class="is-flex country_section is-align-items-baseline">
         <!-- {# country name and flag #} -->
         <h2 class="subtitle is-4 center_content country_name_flag pt-3">
-            {% translate country %} {{ language_code }}
+            {% translate country %}
             <img class="icon" src="https://fonts.gstatic.com/s/e/notoemoji/15.0/{{ country_code }}/72.png" alt="{% translate country %} {% translate 'flag' %}">
         </h2>
 
@@ -289,11 +289,17 @@
                     {% endif %}
                         <b><a href="https://linktr.ee/adeno.eu" target="_blank">Adeno app</a></b>
             </p>
+            <p>
+                {% translate "For more information on the elections and the role of the parliament, visit" %}
+                <b><a href="https://elections.europa.eu/" target="_blank">elections.europa.eu</a></b>
+            </p>
           </div>
         </div>
       
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
+
+    <div id="language-code" data-language-code="{{ language_code }}"></div>
 
     <script src="{% static 'yvm/summary.js' %}"></script>
 {% endblock %}

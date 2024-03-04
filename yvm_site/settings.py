@@ -138,6 +138,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGES = [
     ('en', 'English'),
     ('fr', 'French'),
+    ('nl', 'Dutch'),
 ]
 
 
@@ -160,11 +161,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # AUTH_USER_MODEL = 'yvm.MepUser' # was not working finally
 
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_USE_TLS = True
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = str(os.getenv('EMAIL_USER'))
-# EMAIL_HOST_PASSWORD = str(os.getenv('EMAIL_PASSWORD'))
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT')
+EMAIL_USE_SSL = config('EMAIL_USE_SSL')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 LOGIN_URL = '/comment_my_stances/'

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-03 20:37+0100\n"
+"POT-Creation-Date: 2024-03-04 14:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid "Implement measures for ecosystem restoration on 20&#37; of all land and s
 msgstr "Mettre en oeuvre des mesures de restauration des écosystèmes sur 20&#37; de toutes les terres et zones maritimes d'ici 2030, afin de respecter les engagements internationaux, avec des exemptions pour les énergies renouvelables, la construction de logements et les projets de défense nationale, ou si la production/les prix alimentaires ont trop changé"
 
 #: .\populate_vote_and_position_tables.py:40
-msgid "Improve and harmonise air quality monitoring and consider more realistic air pollution tresholds, to be met by 2035, while intermediate threshold must be met by 2030"
+msgid "Improve and harmonise air quality monitoring and consider more realistic air pollution thresholds, to be met by 2035, while intermediate threshold must be met by 2030"
 msgstr "Améliorer et harmoniser la surveillance de la qualité de l'air et envisager des seuils de pollution atmosphérique plus réalistes, à atteindre d'ici 2035, avec des seuils intermédiaires pour 2030"
 
 #: .\populate_vote_and_position_tables.py:49
@@ -43,7 +43,7 @@ msgid "Set minimum quality standards for traineeships regarding duration, remune
 msgstr "Établir des normes minimales de qualité pour les stages en ce qui concerne la durée, la rémunération, l'accès à la protection sociale, et les rendre plus accessibles aux personnes handicapées et à celles issues de milieux vulnérables"
 
 #: .\populate_vote_and_position_tables.py:88
-msgid "Facilitate the obtention of the EU long-term resident status for foreigners who have been living in EU for more than 3 years"
+msgid "Facilitate the obtainment of the EU long-term resident status for foreigners who have been living in EU for more than 3 years"
 msgstr "Faciliter l'obtention du statut de résident de longue durée - UE pour les étrangers qui vivent au sein de l'UE depuis plus de 3 ans"
 
 #: .\populate_vote_and_position_tables.py:97
@@ -63,7 +63,7 @@ msgid "Calls on NATO members to invite Ukraine to join the alliance, support Ukr
 msgstr "Appeller les membres de l'OTAN à inviter l'Ukraine à rejoindre l'alliance, à soutenir l'Ukraine dans son parcours vers l'adhésion à l'UE et à exercer une pression accrue sur la Russie par le biais de sanctions supplémentaires"
 
 #: .\populate_vote_and_position_tables.py:134
-msgid "Launch investigations and implement safeguards to prevent abuse in the use of spyware (e.g. by police, EU or imported from/exported to non-EU governements)"
+msgid "Launch investigations and implement safeguards to prevent abuse in the use of spyware (e.g. by police, EU or imported from/exported to non-EU governments)"
 msgstr "Lancer des enquêtes et mettre en place des mesures de protection pour prévenir les abus dans l'utilisation des logiciels espions (par exemple, par la police, l'UE ou importés/exportés vers des gouvernements non-UE)"
 
 #: .\populate_vote_and_position_tables.py:142
@@ -204,7 +204,7 @@ msgstr "Bonjour, je suis Pierre, le créateur de ce site web. Je l'ai réalisé 
 
 #: .\yvm\templates\yvm\about.html:11 .\yvm\templates\yvm\summary.html:239
 msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by myself."
-msgstr "Ce site web vous permet de voir les votes des député.e.s européens de la législature 2019-2024 sur 17 votes récents qui ont été sélectionnés et résumés par moi-même."
+msgstr "Ce site web vous permet de voir les votes des député.e.s européen.ne.s de la législature 2019-2024 sur 17 votes récents qui ont été sélectionnés et résumés par moi-même."
 
 #: .\yvm\templates\yvm\about.html:13
 msgid "The idea came from"
@@ -385,7 +385,11 @@ msgstr "ou sur"
 
 #: .\yvm\templates\yvm\summary.html:284
 msgid "Other voting advice applications that consider all persons standing for elections are available here:"
-msgstr "D'autres systèmes d'aide au vote qui considèrent toutes les personnes qui se présentent aux élections:"
+msgstr "Il existe d'autres systèmes d'aide au vote qui considèrent toutes les personnes qui se présentent aux élections:"
+
+#: .\yvm\templates\yvm\summary.html:293
+msgid "For more information on the elections and the role of the parliament, visit"
+msgstr "Pour plus d'information sur les élections et sur le rôle du parlement, visitez"
 
 #: .\yvm\views.py:17
 msgid "Group of the European People's Party (Christian Democrats)"

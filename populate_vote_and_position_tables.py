@@ -37,7 +37,7 @@ voteidListList = [
     # 13.09.2023 - 62prcnt in favor
     [2,
      '157953', 
-     _('Improve and harmonise air quality monitoring and consider more realistic air pollution tresholds, to be met by 2035, while intermediate threshold must be met by 2030'), 
+     _('Improve and harmonise air quality monitoring and consider more realistic air pollution thresholds, to be met by 2035, while intermediate threshold must be met by 2030'), 
      'Environment', 
      'https://www.europarl.europa.eu/news/en/press-room/20230911IPR04915/air-pollution-meps-want-stricter-limits-to-achieve-zero-pollution-by-2050', 
      'https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?reference=2022/0347(COD)&l=en',
@@ -85,7 +85,7 @@ voteidListList = [
     # 20.04.2023, 391/140/25
     [7,
      '154562', 
-     _('Facilitate the obtention of the EU long-term resident status for foreigners who have been living in EU for more than 3 years'), 
+     _('Facilitate the obtainment of the EU long-term resident status for foreigners who have been living in EU for more than 3 years'), 
      'Civil Liberties, justice and home affairs', 
     #  'https://www.europarl.europa.eu/news/en/press-room/20230419IPR80906/asylum-and-migration-parliament-confirms-key-reform-mandates', # too many things here
      'https://oeil.secure.europarl.europa.eu/oeil/popups/summary.do?id=1740310&t=e&l=en',
@@ -131,7 +131,7 @@ voteidListList = [
     # 15.06.2023, 411/97/37 
     [12,
      '156258', 
-     _('Launch investigations and implement safeguards to prevent abuse in the use of spyware (e.g. by police, EU or imported from/exported to non-EU governements)'), 
+     _('Launch investigations and implement safeguards to prevent abuse in the use of spyware (e.g. by police, EU or imported from/exported to non-EU governments)'), 
      'Liberty', 
      'https://www.europarl.europa.eu/news/en/press-room/20230609IPR96217/spyware-meps-call-for-full-investigations-and-safeguards-to-prevent-abuse', 
      'https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?reference=2022/2077(INI)&l=en',

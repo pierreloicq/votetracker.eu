@@ -275,3 +275,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+// alert for AI translated languages
+var languageCode = document.getElementById('language-code').getAttribute('data-language-code');
+if (languageCode === 'nl') {
+    alert("De huidige vertaling van Frans/Engels naar Nederlands is gemaakt door kunstmatige intelligentie. Als je een fout ziet, of als je gemotiveerd bent om de volledige vertaling te valideren, neem dan contact met me op.");
+}
+

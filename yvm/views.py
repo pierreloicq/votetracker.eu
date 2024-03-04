@@ -8,7 +8,7 @@ from django.urls import reverse
 from .models import Position
 from .forms import CountrySelectionForm
 import pandas as pd
-# from django.utils.translation import get_language
+from django.utils.translation import get_language
 from django.utils.translation import gettext_lazy as _
 
 
@@ -68,6 +68,7 @@ def index(request):
 
 def bycountryAllTexts(request):
     country = request.GET.get('country')
+    language_code = get_language()
     allData = Position.objects.filter(mep__country=country).values('mep__fullname', 'mep__national_party', 
                             'vote__short_desc','stance', 'comment', 'mep__photo_url', 
                             'mep__eu_page_url', 'mep__eu_group_short',
@@ -108,5 +109,6 @@ def bycountryAllTexts(request):
 
     #### for dev, to see the shape of the table, output here df.to_html() instead of df and display {{ df|safe }} in summary.html 
     context = {'df':df, 'country':country, 'country_code':country_codes[country], 
-               'nb_mep':df.shape[0], 'nb_votes':len(df.columns), 'eu_party_dict':eu_party_dict}
+               'nb_mep':df.shape[0], 'nb_votes':len(df.columns), 'eu_party_dict':eu_party_dict,
+               'language_code':language_code}
     return render(request, "yvm/summary.html", context)
