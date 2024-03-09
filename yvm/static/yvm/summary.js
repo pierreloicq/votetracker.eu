@@ -232,7 +232,7 @@ document.getElementById('clearFilterButton').addEventListener('click', clearFilt
 
 
 
-//// given by Bulma's documentation to handle the general_help modal
+//// given by Bulma's documentation to handle the general_help modal (except the last paragraph)
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el) {
@@ -274,7 +274,13 @@ document.addEventListener('DOMContentLoaded', () => {
         closeAllModals();
       }
     });
-  });
+
+    // custom: open the modal at loading of the summary page
+    // const helping_modal = document.getElementById('general_help');
+    // openModal(helping_modal);
+
+});
+
 
 
 // alert for AI translated languages

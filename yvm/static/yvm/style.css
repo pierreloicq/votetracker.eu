@@ -239,7 +239,7 @@ a.external {
     width: 74px;
 }
 
-.deselected_rows {
+/* .deselected_rows {
     position: relative;
 }
 
@@ -257,8 +257,15 @@ a.external {
       );
     pointer-events: none; 
     z-index: 1;
-}
+} */
 
+.deselected_rows {
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent 0 10px,
+        rgba(128, 128, 128, 0.233) 11px 12px
+      );
+}
 
 #clearFilterButton {
     position: absolute;
