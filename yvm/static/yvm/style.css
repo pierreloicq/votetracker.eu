@@ -239,7 +239,7 @@ a.external {
     width: 74px;
 }
 
-.deselected_rows {
+/* .deselected_rows {
     position: relative;
 }
 
@@ -257,15 +257,30 @@ a.external {
       );
     pointer-events: none; 
     z-index: 1;
-}
+} */
 
-/* .deselected_rows {
+.deselected_rows {
     background-image: -webkit-repeating-linear-gradient(
         -45deg,
         transparent 0 10px,
         rgba(128, 128, 128, 0.233) 11px 12px
-      );
-} */
+    );
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent 0 10px,
+        rgba(128, 128, 128, 0.233) 11px 12px
+    );
+}
+
+.toggleImage {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.toggleButton {
+    height: 4rem !important; 
+    width: 4rem;
+}
 
 #clearFilterButton {
     position: absolute;

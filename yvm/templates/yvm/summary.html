@@ -67,8 +67,7 @@
                         {% translate "Your selections by stance are stored on your device with cookies" %}
                         <br>
                     </span>
-
-                    <button class="button is-warning is-small px-1 py-0 my-2 resetChoicesBtn" onclick="resetStanceChoices()" style="height:1rem">
+                    <button class="button is-warning is-small px-1 py-0 my-2 resetChoicesBtn" style="height:1rem">
                         {% translate "reset all choices" %}
                     </button>
                 </td>
@@ -76,9 +75,15 @@
                 {% for header in df.columns %}
                     <td class="coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
                         <button class="button toggleButton is-focused">
-                            <div class="toggleContent icon">
+                            <div class="toggleContent">
                                 <img src="{% static 'yvm/images/thumbUp.svg' %}" class="toggleImage thumb_none col_{{ forloop.counter }}_set" alt="click to change your choice regarding this topic">
-                                <span class="toggleText has-text-weight-bold is-size-4">?</span>
+                                <span class="toggleText is-size-7">
+                                    {% translate "choose" %}
+                                    <br>
+                                    {% translate "your" %}
+                                    <br>
+                                    {% translate "stance" %}
+                                </span>
                             </div>
                         </button>
                     </td>

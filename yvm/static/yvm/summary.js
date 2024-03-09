@@ -116,6 +116,8 @@ function readCookie() {
 
 // allow the toggling of icons in the buttons
 document.addEventListener('DOMContentLoaded', function() {
+    var initialText = document.querySelector('.toggleText').innerHTML;
+
     var toggleButtons = document.querySelectorAll('.toggleButton');
     const cookieValues = readCookie();
 
@@ -126,10 +128,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // read cookie and sort table at loading
         if (cookieValues[icon[2]] === 'thumb_for') {
             icon.replace('thumb_none', 'thumb_for');
-            text.textContent = '';
+            text.innerHTML = '';
         } else if (cookieValues[icon[2]] === 'thumb_ag') {
             icon.replace('thumb_none', 'thumb_ag');
-            text.textContent = '';
+            text.innerHTML = '';
         }
         filterTwoTables()
 
@@ -139,36 +141,41 @@ document.addEventListener('DOMContentLoaded', function() {
                 icon.replace('thumb_for', 'thumb_ag');
             } else if (icon.contains('thumb_ag')) {
                 icon.replace('thumb_ag', 'thumb_none');
-                text.textContent = '?';
+                text.innerHTML = initialText;
             } else if (icon.contains('thumb_none')) {
                 icon.replace('thumb_none', 'thumb_for');
-                text.textContent = '';
+                text.innerHTML = '';
             }
             filterTwoTables()
             writeCookie(icon)
         });
     });
+
+    // define behaviour of the resetChoicesBtn
+    document.querySelector('.resetChoicesBtn').addEventListener('click', function() {
+        var toggleButtons = document.querySelectorAll('.toggleButton');
+        toggleButtons.forEach(function(button) {
+            var icon = button.querySelector('.toggleImage').classList;
+            var text = button.querySelector('.toggleText');
+            // loop on all class items to find thumb_
+            icon.forEach(function(item) {
+                if (item.startsWith('thumb_')) {
+                    icon.remove(item);
+                }
+            });
+            // Add the new class
+            icon.add('thumb_none');
+            text.innerHTML = initialText;
+            writeCookie(icon)
+        });
+        filterTwoTables()
+    // }
+    })
+
 });
 
 
-function resetStanceChoices() {
-    var toggleButtons = document.querySelectorAll('.toggleButton');
-    toggleButtons.forEach(function(button) {
-        var icon = button.querySelector('.toggleImage').classList;
-        var text = button.querySelector('.toggleText');
-        // loop on all class items to find thumb_
-        icon.forEach(function(item) {
-            if (item.startsWith('thumb_')) {
-                icon.remove(item);
-            }
-        });
-        // Add the new class
-        icon.add('thumb_none');
-        text.textContent = '?';
-        writeCookie(icon)
-    });
-    filterTwoTables()
-}
+
 
 
 // // Filter table with text form
