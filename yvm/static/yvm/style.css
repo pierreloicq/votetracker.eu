@@ -239,7 +239,7 @@ a.external {
     width: 74px;
 }
 
-/* .deselected_rows {
+.deselected_rows {
     position: relative;
 }
 
@@ -250,22 +250,22 @@ a.external {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: repeating-linear-gradient(
+    background-image: -webkit-repeating-linear-gradient(
         -45deg,
         transparent 0 10px,
         rgba(128, 128, 128, 0.233) 11px 12px
       );
     pointer-events: none; 
     z-index: 1;
-} */
+}
 
-.deselected_rows {
-    background-image: repeating-linear-gradient(
+/* .deselected_rows {
+    background-image: -webkit-repeating-linear-gradient(
         -45deg,
         transparent 0 10px,
         rgba(128, 128, 128, 0.233) 11px 12px
       );
-}
+} */
 
 #clearFilterButton {
     position: absolute;
