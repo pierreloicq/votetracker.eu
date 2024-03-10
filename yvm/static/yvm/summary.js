@@ -282,9 +282,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // custom: open the modal at loading of the summary page
-    // const helping_modal = document.getElementById('general_help');
-    // openModal(helping_modal);
+    //// custom: open the modal at loading of the summary page
+    const helping_modal = document.getElementById('general_help');
+    openModal(helping_modal);
 
 });
 

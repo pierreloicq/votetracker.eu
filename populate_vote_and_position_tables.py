@@ -85,7 +85,7 @@ voteidListList = [
     # 20.04.2023, 391/140/25
     [7,
      '154562', 
-     _('Facilitate the obtainment of the EU long-term resident status for foreigners who have been living in EU for more than 3 years'), 
+     _('Harmonise the EU long-term resident status for third-country nationals, foster their integration and social inclusion, and enhance their right to mobility within EU countries, as well as increase the EU attractiveness to third-country skills and talents'), 
      'Civil Liberties, justice and home affairs', 
     #  'https://www.europarl.europa.eu/news/en/press-room/20230419IPR80906/asylum-and-migration-parliament-confirms-key-reform-mandates', # too many things here
      'https://oeil.secure.europarl.europa.eu/oeil/popups/summary.do?id=1740310&t=e&l=en',

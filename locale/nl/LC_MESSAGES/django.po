@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-09 16:05+0100\n"
+"POT-Creation-Date: 2024-03-10 14:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,188 +14,72 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\populate_vote_and_position_tables.py:31
-msgid ""
-"Implement measures for ecosystem restoration on 20&#37; of all land and sea "
-"areas by 2030, in order to meet the international commitments, with "
-"exemptions for renewable energy, housing construction and national defence "
-"projects or if food production/price has changed too much"
-msgstr ""
-"Implementeer maatregelen voor ecosysteemherstel op 20&#37; van alle land- en"
-" zeegebieden tegen 2030, om te voldoen aan de internationale verplichtingen,"
-" met uitzonderingen voor hernieuwbare energie, woningbouw en nationale "
-"defensieprojecten of als de voedselproductie/prijs te veel is veranderd"
+msgid "Implement measures for ecosystem restoration on 20&#37; of all land and sea areas by 2030, in order to meet the international commitments, with exemptions for renewable energy, housing construction and national defence projects or if food production/price has changed too much"
+msgstr "Implementeer maatregelen voor ecosysteemherstel op 20&#37; van alle land- en zeegebieden tegen 2030, om te voldoen aan de internationale verplichtingen, met uitzonderingen voor hernieuwbare energie, woningbouw en nationale defensieprojecten of als de voedselproductie/prijs te veel is veranderd"
 
 #: .\populate_vote_and_position_tables.py:40
-msgid ""
-"Improve and harmonise air quality monitoring and consider more realistic air"
-" pollution thresholds, to be met by 2035, while intermediate threshold must "
-"be met by 2030"
-msgstr ""
-"De bewaking van de luchtkwaliteit verbeteren en harmoniseren en "
-"realistischere drempelwaarden voor luchtvervuiling overwegen, die tegen 2035"
-" moeten worden gehaald, terwijl de tussentijdse drempelwaarde tegen 2030 "
-"moet worden gehaald"
+msgid "Improve and harmonise air quality monitoring and consider more realistic air pollution thresholds, to be met by 2035, while intermediate threshold must be met by 2030"
+msgstr "De bewaking van de luchtkwaliteit verbeteren en harmoniseren en realistischere drempelwaarden voor luchtvervuiling overwegen, die tegen 2035 moeten worden gehaald, terwijl de tussentijdse drempelwaarde tegen 2030 moet worden gehaald"
 
 #: .\populate_vote_and_position_tables.py:49
-msgid ""
-"Propose several targets to reduce the quantity of overall and plastic "
-"packaging and require them to be recyclable (with exemptions), while "
-"increasing the quantity of recycled plastic in new packages. Ban the use of "
-"the “forever chemicals” (PFAS) and Bisphenol A in food contact packaging"
-msgstr ""
-"Verschillende doelstellingen voorstellen om de hoeveelheid algemene en "
-"plastic verpakkingen te verminderen en te eisen dat ze recyclebaar zijn (met"
-" uitzonderingen), terwijl de hoeveelheid gerecycled plastic in nieuwe "
-"verpakkingen wordt verhoogd. Het gebruik verbieden van de \"voor altijd "
-"chemische stoffen\" (PFAS) en Bisfenol A in verpakkingen die in contact "
-"komen met voedsel"
+msgid "Propose several targets to reduce the quantity of overall and plastic packaging and require them to be recyclable (with exemptions), while increasing the quantity of recycled plastic in new packages. Ban the use of the “forever chemicals” (PFAS) and Bisphenol A in food contact packaging"
+msgstr "Verschillende doelstellingen voorstellen om de hoeveelheid algemene en plastic verpakkingen te verminderen en te eisen dat ze recyclebaar zijn (met uitzonderingen), terwijl de hoeveelheid gerecycled plastic in nieuwe verpakkingen wordt verhoogd. Het gebruik verbieden van de \"voor altijd chemische stoffen\" (PFAS) en Bisfenol A in verpakkingen die in contact komen met voedsel"
 
 #: .\populate_vote_and_position_tables.py:60
-msgid ""
-"Require companies to disclose information that makes it easier for employees"
-" to compare salaries and to expose existing gender pay gaps"
-msgstr ""
-"Bedrijven verplichten om informatie openbaar te maken die het voor "
-"werknemers gemakkelijker maakt om salarissen te vergelijken en bestaande "
-"beloningsverschillen tussen mannen en vrouwen bloot te leggen"
+msgid "Require companies to disclose information that makes it easier for employees to compare salaries and to expose existing gender pay gaps"
+msgstr "Bedrijven verplichten om informatie openbaar te maken die het voor werknemers gemakkelijker maakt om salarissen te vergelijken en bestaande beloningsverschillen tussen mannen en vrouwen bloot te leggen"
 
 #: .\populate_vote_and_position_tables.py:69
-msgid ""
-"Remove most trade tariffs between EU and New Zealand while protecting "
-"sensitive EU agricultural sectors (like beef and dairy products) with tariff"
-" rate quotas. All EU geographical indications (GIs) are protected for wines "
-"and spirits as well as 163 famous EU foodstuff GIs"
-msgstr ""
-"Afschaffing van de meeste handelstarieven tussen de EU en Nieuw-Zeeland, "
-"terwijl gevoelige landbouwsectoren in de EU (zoals rundvlees en "
-"zuivelproducten) worden beschermd met tariefcontingenten. Alle geografische "
-"aanduidingen (GA's) van de EU worden beschermd, zowel voor wijnen en "
-"gedistilleerde dranken als voor 163 bekende GA's voor levensmiddelen uit de "
-"EU"
+msgid "Remove most trade tariffs between EU and New Zealand while protecting sensitive EU agricultural sectors (like beef and dairy products) with tariff rate quotas. All EU geographical indications (GIs) are protected for wines and spirits as well as 163 famous EU foodstuff GIs"
+msgstr "Afschaffing van de meeste handelstarieven tussen de EU en Nieuw-Zeeland, terwijl gevoelige landbouwsectoren in de EU (zoals rundvlees en zuivelproducten) worden beschermd met tariefcontingenten. Alle geografische aanduidingen (GA's) van de EU worden beschermd, zowel voor wijnen en gedistilleerde dranken als voor 163 bekende GA's voor levensmiddelen uit de EU"
 
 #: .\populate_vote_and_position_tables.py:78
-msgid ""
-"Set minimum quality standards for traineeships regarding duration, "
-"remuneration, access to social protection, and make them more accessible to "
-"persons with disabilities and to those from vulnerable backgrounds"
-msgstr ""
-"Minimumkwaliteitsnormen vaststellen voor stages met betrekking tot duur, "
-"beloning en toegang tot sociale bescherming, en ze toegankelijker maken voor"
-" mensen met een handicap en mensen met een kwetsbare achtergrond"
+msgid "Set minimum quality standards for traineeships regarding duration, remuneration, access to social protection, and make them more accessible to persons with disabilities and to those from vulnerable backgrounds"
+msgstr "Minimumkwaliteitsnormen vaststellen voor stages met betrekking tot duur, beloning en toegang tot sociale bescherming, en ze toegankelijker maken voor mensen met een handicap en mensen met een kwetsbare achtergrond"
 
 #: .\populate_vote_and_position_tables.py:88
-msgid ""
-"Facilitate the obtainment of the EU long-term resident status for foreigners"
-" who have been living in EU for more than 3 years"
-msgstr ""
-"Vergemakkelijken van het verkrijgen van de EU-status van langdurig "
-"ingezetene voor buitenlanders die al meer dan 3 jaar in de EU wonen"
+msgid "Harmonise the EU long-term resident status for third-country nationals, foster their integration and social inclusion, and enhance their right to mobility within EU countries, as well as increase the EU attractiveness to third-country skills and talents"
+msgstr "De EU-status van langdurig ingezeten onderdanen van derde landen harmoniseren, hun integratie en sociale integratie bevorderen, hun recht op mobiliteit binnen de EU-landen versterken en de EU aantrekkelijker maken voor vaardigheden en talenten uit derde landen"
 
 #: .\populate_vote_and_position_tables.py:97
-msgid ""
-"Push carmakers to produce zero- and low-emission vehicles with the target of"
-" 100&#37; of zero emissions cars by 2035, while using a CO₂ computing "
-"methodology throughout the full life-cycle"
-msgstr ""
-"Autofabrikanten stimuleren om emissievrije en -arme voertuigen te produceren"
-" met als doel 100&#37; emissievrije auto's tegen 2035, waarbij een CO₂-"
-"berekeningsmethodologie wordt gebruikt voor de volledige levenscyclus"
+msgid "Push carmakers to produce zero- and low-emission vehicles with the target of 100&#37; of zero emissions cars by 2035, while using a CO₂ computing methodology throughout the full life-cycle"
+msgstr "Autofabrikanten stimuleren om emissievrije en -arme voertuigen te produceren met als doel 100&#37; emissievrije auto's tegen 2035, waarbij een CO₂-berekeningsmethodologie wordt gebruikt voor de volledige levenscyclus"
 
 #: .\populate_vote_and_position_tables.py:107
-msgid ""
-"Ban methane flaring and venting for EU and non-EU companies (through rules "
-"on importations)"
-msgstr ""
-"Het affakkelen en afblazen van methaan verbieden voor EU- en niet-EU-"
-"bedrijven (via regels voor invoer)"
+msgid "Ban methane flaring and venting for EU and non-EU companies (through rules on importations)"
+msgstr "Het affakkelen en afblazen van methaan verbieden voor EU- en niet-EU-bedrijven (via regels voor invoer)"
 
 #: .\populate_vote_and_position_tables.py:116
-msgid ""
-"Allow a short-term funding for the reinforcement of the European defence "
-"industry through joint procurement by member states, with bonuses for "
-"projects supporting Ukraine, Moldova and SMEs"
-msgstr ""
-"Kortetermijnfinanciering mogelijk maken voor de versterking van de Europese "
-"defensie-industrie door middel van gezamenlijke aanbestedingen door de "
-"lidstaten, met bonussen voor projecten die Oekraïne, Moldavië en KMO's "
-"ondersteunen"
+msgid "Allow a short-term funding for the reinforcement of the European defence industry through joint procurement by member states, with bonuses for projects supporting Ukraine, Moldova and SMEs"
+msgstr "Kortetermijnfinanciering mogelijk maken voor de versterking van de Europese defensie-industrie door middel van gezamenlijke aanbestedingen door de lidstaten, met bonussen voor projecten die Oekraïne, Moldavië en KMO's ondersteunen"
 
 #: .\populate_vote_and_position_tables.py:125
-msgid ""
-"Calls on NATO members to invite Ukraine to join the alliance, support "
-"Ukraine on its path to EU accession, and put increased pressure on Russia "
-"through further sanctions"
-msgstr ""
-"Roept de NAVO-leden op Oekraïne uit te nodigen lid te worden van de "
-"alliantie, Oekraïne te steunen op zijn weg naar toetreding tot de EU en de "
-"druk op Rusland op te voeren door middel van verdere sancties"
+msgid "Calls on NATO members to invite Ukraine to join the alliance, support Ukraine on its path to EU accession, and put increased pressure on Russia through further sanctions"
+msgstr "Roept de NAVO-leden op Oekraïne uit te nodigen lid te worden van de alliantie, Oekraïne te steunen op zijn weg naar toetreding tot de EU en de druk op Rusland op te voeren door middel van verdere sancties"
 
 #: .\populate_vote_and_position_tables.py:134
-msgid ""
-"Launch investigations and implement safeguards to prevent abuse in the use "
-"of spyware (e.g. by police, EU or imported from/exported to non-EU "
-"governments)"
-msgstr ""
-"Onderzoeken starten en waarborgen implementeren om misbruik bij het gebruik "
-"van spyware te voorkomen (bijv. door de politie, de EU of geïmporteerd "
-"van/geëxporteerd naar niet-EU-regeringen)"
+msgid "Launch investigations and implement safeguards to prevent abuse in the use of spyware (e.g. by police, EU or imported from/exported to non-EU governments)"
+msgstr "Onderzoeken starten en waarborgen implementeren om misbruik bij het gebruik van spyware te voorkomen (bijv. door de politie, de EU of geïmporteerd van/geëxporteerd naar niet-EU-regeringen)"
 
 #: .\populate_vote_and_position_tables.py:142
-msgid ""
-"Following the Qatargate corruption affair, call to implement effective "
-"systems to detect foreign interference in European Parliament activity and "
-"enforce sanctions on offending countries. Call for a rapid review of the "
-"MEP's Code of Conduct and monitor the activity of former MEPs"
-msgstr ""
-"Naar aanleiding van de corruptieaffaire rond Qatargate oproepen tot de "
-"invoering van doeltreffende systemen om buitenlandse inmenging in de "
-"werkzaamheden van het Europees Parlement op te sporen en sancties op te "
-"leggen aan landen die de regels overtreden. Oproep tot een snelle herziening"
-" van de gedragscode voor EP-leden en toezicht op de activiteiten van "
-"voormalige EP-leden"
+msgid "Following the Qatargate corruption affair, call to implement effective systems to detect foreign interference in European Parliament activity and enforce sanctions on offending countries. Call for a rapid review of the MEP's Code of Conduct and monitor the activity of former MEPs"
+msgstr "Naar aanleiding van de corruptieaffaire rond Qatargate oproepen tot de invoering van doeltreffende systemen om buitenlandse inmenging in de werkzaamheden van het Europees Parlement op te sporen en sancties op te leggen aan landen die de regels overtreden. Oproep tot een snelle herziening van de gedragscode voor EP-leden en toezicht op de activiteiten van voormalige EP-leden"
 
 #: .\populate_vote_and_position_tables.py:150
-msgid ""
-"Increase capacity of the Frontex european agency to search and rescue "
-"migrants at sea, and to fight against criminal smugglers and human "
-"traffickers. The voted text also give feedback regarding specific situations"
-" in Greece, Lithuania and Hungary"
-msgstr ""
-"Vergroting van de capaciteit van het Europees agentschap Frontex om "
-"migranten op zee op te sporen en te redden, en om criminele "
-"mensensmokkelaars en mensenhandelaars te bestrijden. De goedgekeurde tekst "
-"geeft ook feedback over specifieke situaties in Griekenland, Litouwen en "
-"Hongarije"
+msgid "Increase capacity of the Frontex european agency to search and rescue migrants at sea, and to fight against criminal smugglers and human traffickers. The voted text also give feedback regarding specific situations in Greece, Lithuania and Hungary"
+msgstr "Vergroting van de capaciteit van het Europees agentschap Frontex om migranten op zee op te sporen en te redden, en om criminele mensensmokkelaars en mensenhandelaars te bestrijden. De goedgekeurde tekst geeft ook feedback over specifieke situaties in Griekenland, Litouwen en Hongarije"
 
 #: .\populate_vote_and_position_tables.py:158
-msgid ""
-"Regarding the EU CO₂ emissions trading system, phase out the free allowances"
-" to the aviation sector by 2026 while promoting the use of sustainable "
-"aviation fuels"
-msgstr ""
-"Met betrekking tot het EU-systeem voor de handel in CO₂-emissierechten, de "
-"gratis rechten voor de luchtvaartsector geleidelijk afschaffen tegen 2026 en"
-" tegelijkertijd het gebruik van duurzame vliegtuigbrandstoffen bevorderen"
+msgid "Regarding the EU CO₂ emissions trading system, phase out the free allowances to the aviation sector by 2026 while promoting the use of sustainable aviation fuels"
+msgstr "Met betrekking tot het EU-systeem voor de handel in CO₂-emissierechten, de gratis rechten voor de luchtvaartsector geleidelijk afschaffen tegen 2026 en tegelijkertijd het gebruik van duurzame vliegtuigbrandstoffen bevorderen"
 
 #: .\populate_vote_and_position_tables.py:167
-msgid ""
-"Foster the development of small modular reactors (SMRs) for nuclear "
-"electricity production"
-msgstr ""
-"De ontwikkeling van kleine modulaire reactoren (SMR's) voor de productie van"
-" kernenergie bevorderen"
+msgid "Foster the development of small modular reactors (SMRs) for nuclear electricity production"
+msgstr "De ontwikkeling van kleine modulaire reactoren (SMR's) voor de productie van kernenergie bevorderen"
 
 #: .\populate_vote_and_position_tables.py:175
-msgid ""
-"Calls on Member States to introduce solidarity taxes on high levels of "
-"wealth to provide for funding to mitigate the major challenges of our times;"
-" supports calls to start international-level discussions to establish a "
-"progressive wealth tax"
-msgstr ""
-"Roept de lidstaten op solidariteitsbelastingen in te voeren op hoge "
-"vermogens om te voorzien in financiering om de grote uitdagingen van deze "
-"tijd aan te pakken; steunt oproepen om op internationaal niveau besprekingen"
-" te starten om een progressieve vermogensbelasting in te voeren"
+msgid "Calls on Member States to introduce solidarity taxes on high levels of wealth to provide for funding to mitigate the major challenges of our times; supports calls to start international-level discussions to establish a progressive wealth tax"
+msgstr "Roept de lidstaten op solidariteitsbelastingen in te voeren op hoge vermogens om te voorzien in financiering om de grote uitdagingen van deze tijd aan te pakken; steunt oproepen om op internationaal niveau besprekingen te starten om een progressieve vermogensbelasting in te voeren"
 
 #: .\yvm\forms.py:8
 msgid "Austria"
@@ -310,22 +194,12 @@ msgid "About"
 msgstr "Over"
 
 #: .\yvm\templates\yvm\about.html:9
-msgid ""
-"Hi, I'm Pierre, the creator of this website. I built it in my spare time "
-"with the goal of helping people make better decisions."
-msgstr ""
-"Hallo, ik ben Pierre, de maker van deze website. Ik heb hem in mijn vrije "
-"tijd gebouwd met als doel mensen te helpen betere beslissingen te nemen."
+msgid "Hi, I'm Pierre, the creator of this website. I built it in my spare time with the goal of helping people make better decisions."
+msgstr "Hallo, ik ben Pierre, de maker van deze website. Ik heb hem in mijn vrije tijd gebouwd met als doel mensen te helpen betere beslissingen te nemen."
 
 #: .\yvm\templates\yvm\about.html:11
-msgid ""
-"This website enables you to view the votes of the Members of the European "
-"Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were "
-"chosen and summarized by myself."
-msgstr ""
-"Op deze website kun je de stemmen van de Europees Parlementsleden "
-" van de zittingsperiode 2019-2024 bekijken over 17 recente stemmingen"
-" die door mijzelf zijn gekozen en samengevat."
+msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by myself."
+msgstr "Op deze website kun je de stemmen van de Europees Parlementsleden  van de zittingsperiode 2019-2024 bekijken over 17 recente stemmingen die door mijzelf zijn gekozen en samengevat."
 
 #: .\yvm\templates\yvm\about.html:13
 msgid "The idea came from"
@@ -333,9 +207,7 @@ msgstr "Het idee kwam van"
 
 #: .\yvm\templates\yvm\about.html:15
 msgid ", a website built by the votewatch.eu team for the 2019 elections"
-msgstr ""
-", een website gebouwd door het votewatch.eu team voor de verkiezingen van "
-"2019"
+msgstr ", een website gebouwd door het votewatch.eu team voor de verkiezingen van 2019"
 
 #: .\yvm\templates\yvm\about.html:18
 msgid "The code is available on"
@@ -358,10 +230,8 @@ msgid "was really helpful for building this website"
 msgstr "was echt nuttig voor het bouwen van deze website"
 
 #: .\yvm\templates\yvm\about.html:34
-msgid ""
-"The picture of the hemicycle on the index page was shot by Fred Marvaux"
-msgstr ""
-"De foto van de hemicycle op de indexpagina is gemaakt door Fred Marvaux."
+msgid "The picture of the hemicycle on the index page was shot by Fred Marvaux"
+msgstr "De foto van de hemicycle op de indexpagina is gemaakt door Fred Marvaux."
 
 #: .\yvm\templates\yvm\about.html:35
 msgid "source"
@@ -388,24 +258,16 @@ msgid "You can contact me at:"
 msgstr "Je kunt contact met me opnemen op:"
 
 #: .\yvm\templates\yvm\base.html:17 .\yvm\templates\yvm\base.html:18
-msgid ""
-"Find out how the current Members of the European Parliament voted on 17 key "
-"recent votes"
-msgstr ""
-"Ontdek hoe de huidige Europees Parlementsleden hebben gestemd bij 17"
-" recente stemmingen"
+msgid "Find out how the current Members of the European Parliament voted on 17 key recent votes"
+msgstr "Ontdek hoe de huidige Europees Parlementsleden hebben gestemd bij 17 recente stemmingen"
 
 #: .\yvm\templates\yvm\index.html:10
 msgid "Be ready for the European elections of June 2024"
 msgstr "Wees klaar voor de Europese verkiezingen van juni 2024"
 
 #: .\yvm\templates\yvm\index.html:13
-msgid ""
-"Find out how the current Members of the European Parliament voted on 17 key "
-"recent votes and find your best match"
-msgstr ""
-"Ontdek hoe de huidige Europees Parlementsleden hebben gestemd over "
-"17 recente stemmingen en vind uw beste match"
+msgid "Find out how the current Members of the European Parliament voted on 17 key recent votes and find your best match"
+msgstr "Ontdek hoe de huidige Europees Parlementsleden hebben gestemd over 17 recente stemmingen en vind uw beste match"
 
 #: .\yvm\templates\yvm\index.html:24
 msgid "Select a country"
@@ -432,155 +294,116 @@ msgid "Filter by stance"
 msgstr "Filter op stand"
 
 #: .\yvm\templates\yvm\summary.html:65
-msgid ""
-"The selection of MEPs displayed below is the result of your choices on the "
-"17 votes"
-msgstr ""
-"De EP-leden selectie hieronder is het resultaat van uw keuzes op de 17 "
-"stemmen"
+msgid "The selection of MEPs displayed below is the result of your choices on the 17 votes"
+msgstr "De EP-leden selectie hieronder is het resultaat van uw keuzes op de 17 stemmen"
 
 #: .\yvm\templates\yvm\summary.html:67
 msgid "Your selections by stance are stored on your device with cookies"
 msgstr "Uw selecties worden op uw apparaat opgeslagen met cookies."
 
-#: .\yvm\templates\yvm\summary.html:72
+#: .\yvm\templates\yvm\summary.html:71
 msgid "reset all choices"
 msgstr "alle keuzes resetten"
 
-#: .\yvm\templates\yvm\summary.html:92
+#: .\yvm\templates\yvm\summary.html:81
+msgid "choose"
+msgstr "kies"
+
+#: .\yvm\templates\yvm\summary.html:83
+msgid "your"
+msgstr "uw"
+
+#: .\yvm\templates\yvm\summary.html:85
+msgid "stance"
+msgstr "standpunt"
+
+#: .\yvm\templates\yvm\summary.html:97
 msgid "Filter by name or party"
 msgstr "Filter op naam of partij"
 
-#: .\yvm\templates\yvm\summary.html:104
+#: .\yvm\templates\yvm\summary.html:109
 msgid "MEPs selected"
 msgstr "EP-leden geselecteerde"
 
-#: .\yvm\templates\yvm\summary.html:171
+#: .\yvm\templates\yvm\summary.html:176
 msgid "MEPs deselected"
 msgstr "EP-leden gedeselecteerd"
 
-#: .\yvm\templates\yvm\summary.html:237
-msgid ""
-"This website enables you to view the votes of the Members of the European "
-"Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes, as well "
-"as identify MEP whose stances are closest to yours."
-msgstr ""
-"Op deze website kunt u de stemmen van de Europees Parlement leden"
-" voor de zittingsperiode 2019-2024 over 17 recente stemmingen bekijken"
-" en identificeren waarvan de standpunten het dichtst bij die van u "
-"liggen."
+#: .\yvm\templates\yvm\summary.html:242
+msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes, as well as identify MEP whose stances are closest to yours."
+msgstr "Op deze website kunt u de stemmen van de Europees Parlement leden voor de zittingsperiode 2019-2024 over 17 recente stemmingen bekijken en identificeren waarvan de standpunten het dichtst bij die van u liggen."
 
-#: .\yvm\templates\yvm\summary.html:238
+#: .\yvm\templates\yvm\summary.html:243
 msgid "Navigate between each text with the << and >> buttons."
 msgstr "Navigeer tussen elke tekst met de knoppen << en >>."
 
-#: .\yvm\templates\yvm\summary.html:243
+#: .\yvm\templates\yvm\summary.html:248
 msgid "in favor"
 msgstr "voor"
 
-#: .\yvm\templates\yvm\summary.html:248
+#: .\yvm\templates\yvm\summary.html:253
 msgid "against"
 msgstr "tegen"
 
-#: .\yvm\templates\yvm\summary.html:253
+#: .\yvm\templates\yvm\summary.html:258
 msgid "abstention"
 msgstr "onthouding"
 
-#: .\yvm\templates\yvm\summary.html:255
-msgid ""
-"didn't vote. It may be because the MEP was not in function at the time of "
-"the vote."
-msgstr ""
-"niet gestemd. Het kan zijn omdat het Parlementslid ten tijde van de stemming"
-" niet in functie was."
-
-#: .\yvm\templates\yvm\summary.html:257
-msgid ""
-"For each text, you can set the stance of yours by toggling the [?] button, "
-"and it will filter out the MEP who voted the opposite."
-msgstr ""
-"Voor elke tekst kun je het standpunt van jezelf instellen door op de [?] "
-"knop te drukken, en het zal de EP-leden die het tegenovergestelde stemden eruit"
-" filteren."
-
-#: .\yvm\templates\yvm\summary.html:258
-msgid ""
-"This selection of MEPs shown below is the result of your choices on the 17 "
-"votes."
-msgstr ""
-"Deze EP-leden selectie hieronder is het resultaat van uw keuzes op de 17 "
-"stemmen."
-
-#: .\yvm\templates\yvm\summary.html:259
-msgid ""
-"As you progress through the texts, the selection should narrow down, "
-"eventually indicating which MEPs are your best matches."
-msgstr ""
-"Naarmate je verder in de teksten komt, wordt de selectie steeds kleiner en "
-"kun je uiteindelijk zien welke EP-leden het beste bij je passen."
-
 #: .\yvm\templates\yvm\summary.html:260
-msgid ""
-"Don't take the result too much for granted. Some MEP may be in the final "
-"results because they didn't vote on some texts."
-msgstr ""
-"Neem de uitslag niet te vanzelfsprekend. Sommige Parlementsleden kunnen in "
-"de einduitslag staan omdat ze over sommige teksten niet hebben gestemd."
+msgid "didn't vote. It may be because the MEP was not in function at the time of the vote."
+msgstr "niet gestemd. Het kan zijn omdat het Parlementslid ten tijde van de stemming niet in functie was."
 
 #: .\yvm\templates\yvm\summary.html:262
-msgid ""
-"MEPs are invited to explain their stances. If they provide a comment, you "
-"can see it by clicking on the"
-msgstr ""
-"De Parlementsleden worden uitgenodigd om hun standpunt toe "
-"te lichten. Als ze commentaar geven, kun je dat zien door op de knop"
+msgid "For each text, you can set the stance of yours by toggling the [?] button, and it will filter out the MEP who voted the opposite."
+msgstr "Voor elke tekst kun je het standpunt van jezelf instellen door op de [?] knop te drukken, en het zal de EP-leden die het tegenovergestelde stemden eruit filteren."
 
-#: .\yvm\templates\yvm\summary.html:268
+#: .\yvm\templates\yvm\summary.html:263
+msgid "This selection of MEPs shown below is the result of your choices on the 17 votes."
+msgstr "Deze EP-leden selectie hieronder is het resultaat van uw keuzes op de 17 stemmen."
+
+#: .\yvm\templates\yvm\summary.html:264
+msgid "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."
+msgstr "Naarmate je verder in de teksten komt, wordt de selectie steeds kleiner en kun je uiteindelijk zien welke EP-leden het beste bij je passen."
+
+#: .\yvm\templates\yvm\summary.html:265
+msgid "Don't take the result too much for granted. Some MEP may be in the final results because they didn't vote on some texts."
+msgstr "Neem de uitslag niet te vanzelfsprekend. Sommige Parlementsleden kunnen in de einduitslag staan omdat ze over sommige teksten niet hebben gestemd."
+
+#: .\yvm\templates\yvm\summary.html:267
+msgid "MEPs are invited to explain their stances. If they provide a comment, you can see it by clicking on the"
+msgstr "De Parlementsleden worden uitgenodigd om hun standpunt toe te lichten. Als ze commentaar geven, kun je dat zien door op de knop"
+
+#: .\yvm\templates\yvm\summary.html:273
 msgid "Click on the button"
 msgstr "Klik op de knop"
 
-#: .\yvm\templates\yvm\summary.html:270
+#: .\yvm\templates\yvm\summary.html:275
 msgid "to get statistics by party and country on this vote."
 msgstr "voor statistieken per partij en land over deze stemming."
 
-#: .\yvm\templates\yvm\summary.html:273
-msgid ""
-"Keep in mind that the newcomers MEPs may also be interesting although they "
-"are not shown here."
-msgstr ""
-"Vergeet niet dat de nieuwkomers in het Europees Parlement ook interessant "
-"kunnen zijn, hoewel ze hier niet worden weergegeven."
+#: .\yvm\templates\yvm\summary.html:278
+msgid "Keep in mind that the newcomers MEPs may also be interesting although they are not shown here."
+msgstr "Vergeet niet dat de nieuwkomers in het Europees Parlement ook interessant kunnen zijn, hoewel ze hier niet worden weergegeven."
 
-#: .\yvm\templates\yvm\summary.html:274
+#: .\yvm\templates\yvm\summary.html:279
 msgid "Also, your best match may not stand for re-election."
 msgstr "Ook is het mogelijk dat je beste match zich niet herkiesbaar stelt."
 
-#: .\yvm\templates\yvm\summary.html:276
-msgid ""
-"If you want to see the MEPs votes for other texts, you can search for them "
-"on"
-msgstr ""
-"Als je de stemmen van de Parlementsleden voor andere teksten wilt zien, kun "
-"je ze zoeken op"
+#: .\yvm\templates\yvm\summary.html:281
+msgid "If you want to see the MEPs votes for other texts, you can search for them on"
+msgstr "Als je de stemmen van de Parlementsleden voor andere teksten wilt zien, kun je ze zoeken op"
 
-#: .\yvm\templates\yvm\summary.html:278
+#: .\yvm\templates\yvm\summary.html:283
 msgid "or on"
 msgstr "of op"
 
-#: .\yvm\templates\yvm\summary.html:282
-msgid ""
-"Other voting advice applications that consider all persons standing for "
-"elections are available here:"
-msgstr ""
-"Andere toepassingen voor stemadvies die rekening houden met alle personen "
-"die zich kandidaat stellen voor de verkiezingen, zijn hier beschikbaar:"
+#: .\yvm\templates\yvm\summary.html:287
+msgid "Other voting advice applications that consider all persons standing for elections are available here:"
+msgstr "Andere toepassingen voor stemadvies die rekening houden met alle personen die zich kandidaat stellen voor de verkiezingen, zijn hier beschikbaar:"
 
-#: .\yvm\templates\yvm\summary.html:291
-msgid ""
-"For more information on the elections and the role of the parliament, visit"
-msgstr ""
-"Ga voor meer informatie over de verkiezingen en de rol van het parlement "
-"naar"
+#: .\yvm\templates\yvm\summary.html:296
+msgid "For more information on the elections and the role of the parliament, visit"
+msgstr "Ga voor meer informatie over de verkiezingen en de rol van het parlement naar"
 
 #: .\yvm\views.py:17
 msgid "Group of the European People's Party (Christian Democrats)"
