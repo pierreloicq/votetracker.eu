@@ -359,8 +359,8 @@ msgid "didn't vote. It may be because the MEP was not in function at the time of
 msgstr "n'a pas voté. Possiblement car il/elle n'était pas en fonction au moment du vote."
 
 #: .\yvm\templates\yvm\summary.html:262
-msgid "For each text, you can set the stance of yours by toggling the [?] button, and it will filter out the MEP who voted the opposite."
-msgstr "Pour chaque texte, vous pouvez indiquer votre position avec le bouton [?] et cela désélectionnera les députés qui ont voté l'inverse."
+msgid "For each text, you can set the stance of yours by toggling the [choose your stance] button, and it will filter out the MEP who voted the opposite."
+msgstr "Pour chaque texte, vous pouvez indiquer votre position avec le bouton [choisissez votre position] et cela désélectionnera les députés qui ont voté l'inverse."
 
 #: .\yvm\templates\yvm\summary.html:263
 msgid "This selection of MEPs shown below is the result of your choices on the 17 votes."
