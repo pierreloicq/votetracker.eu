@@ -258,7 +258,7 @@ msgid "You can contact me at:"
 msgstr "Je kunt contact met me opnemen op:"
 
 #: .\yvm\templates\yvm\base.html:17 .\yvm\templates\yvm\base.html:18
-msgid "Find out how the current Members of the European Parliament voted on 17 key recent votes"
+msgid "Find out how the current Members of the European Parliament voted on 17 recent votes"
 msgstr "Ontdek hoe de huidige Europees Parlementsleden hebben gestemd bij 17 recente stemmingen"
 
 #: .\yvm\templates\yvm\index.html:10
@@ -266,7 +266,7 @@ msgid "Be ready for the European elections of June 2024"
 msgstr "Wees klaar voor de Europese verkiezingen van juni 2024"
 
 #: .\yvm\templates\yvm\index.html:13
-msgid "Find out how the current Members of the European Parliament voted on 17 key recent votes and find your best match"
+msgid "Find out how the current Members of the European Parliament voted on 17 recent votes and find your best match"
 msgstr "Ontdek hoe de huidige Europees Parlementsleden hebben gestemd over 17 recente stemmingen en vind uw beste match"
 
 #: .\yvm\templates\yvm\index.html:24
