@@ -165,7 +165,7 @@ EMAIL_BACKEND = config('EMAIL_BACKEND')
 
 if EMAIL_BACKEND == "django.core.mail.backends.console.EmailBackend":
     print(f"{EMAIL_BACKEND=}")
-elif EMAIL_BACKEND == "django.core.mail.backends.filebased.EmailBackend":
+else:
     EMAIL_FILE_PATH = config('EMAIL_FILE_PATH')
     with open(f"{EMAIL_FILE_PATH}/backend.txt", 'w') as file:
         file.write(f"{EMAIL_BACKEND=}")
