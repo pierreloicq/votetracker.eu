@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 14:37+0100\n"
+"POT-Creation-Date: 2024-03-10 22:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,6 +85,10 @@ msgstr "Encourager le développement de petits réacteurs modulaires (SMR) pour 
 #: .\populate_vote_and_position_tables.py:175
 msgid "Calls on Member States to introduce solidarity taxes on high levels of wealth to provide for funding to mitigate the major challenges of our times; supports calls to start international-level discussions to establish a progressive wealth tax"
 msgstr "Appelle les États membres à introduire des prélèvements solidaires sur les niveaux élevés de richesse pour fournir un financement afin d'atténuer les grands défis de notre époque; soutient les appels à engager des discussions au niveau international pour établir un impôt sur la fortune progressif"
+
+#: .\populate_vote_and_position_tables.py:183
+msgid "Encourage the European Central Bank to consider the introduction of differentiated interest rates with lower rates for green investments, which will eventually alleviate inflationary pressures by reducing physical risk and the dependence on fossil fuels"
+msgstr "Encourager la Banque centrale européenne à envisager l'introduction de taux d'intérêt différenciés, offrant des taux plus bas pour les investissements verts, ce qui contribuera finalement à atténuer les pressions inflationnistes en réduisant les risques physiques et la dépendance aux combustibles fossiles"
 
 #: .\yvm\forms.py:8
 msgid "Austria"
@@ -203,8 +207,8 @@ msgid "Hi, I'm Pierre, the creator of this website. I built it in my spare time 
 msgstr "Bonjour, je suis Pierre, le créateur de ce site web. Je l'ai réalisé sur mon temps libre dans le but d'aider les gens à prendre de meilleures décisions."
 
 #: .\yvm\templates\yvm\about.html:11
-msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by myself."
-msgstr "Ce site web vous permet de voir les votes des député.e.s européen.ne.s de la législature 2019-2024 sur 17 votes récents qui ont été sélectionnés et résumés par moi-même."
+msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 18 recent votes that were chosen and summarized by myself."
+msgstr "Ce site web vous permet de voir les votes des député.e.s européen.ne.s de la législature 2019-2024 sur 18 votes récents qui ont été sélectionnés et résumés par moi-même."
 
 #: .\yvm\templates\yvm\about.html:13
 msgid "The idea came from"
@@ -263,16 +267,16 @@ msgid "You can contact me at:"
 msgstr "Vous pouvez me contacter sur:"
 
 #: .\yvm\templates\yvm\base.html:17 .\yvm\templates\yvm\base.html:18
-msgid "Find out how the current Members of the European Parliament voted on 17 recent votes"
-msgstr "Découvrez comment les députés européens ont voté sur 17 votes récents"
+msgid "Find out how the current Members of the European Parliament voted on 18 recent votes"
+msgstr "Découvrez comment les députés européens ont voté sur 18 votes récents"
 
 #: .\yvm\templates\yvm\index.html:10
 msgid "Be ready for the European elections of June 2024"
 msgstr "Soyez prêt pour les élections européennes de juin 2024"
 
 #: .\yvm\templates\yvm\index.html:13
-msgid "Find out how the current Members of the European Parliament voted on 17 recent votes and find your best match"
-msgstr "Découvrez comment les député·e·s européen·ne·s ont voté sur 17 votes récents et trouvez ceux et celles qui vous correspondent le mieux"
+msgid "Find out how the current Members of the European Parliament voted on 18 recent votes and find your best match"
+msgstr "Découvrez comment les député·e·s européen·ne·s ont voté sur 18 votes récents et trouvez ceux et celles qui vous correspondent le mieux"
 
 #: .\yvm\templates\yvm\index.html:24
 msgid "Select a country"
@@ -299,8 +303,8 @@ msgid "Filter by stance"
 msgstr "Filtrer par position"
 
 #: .\yvm\templates\yvm\summary.html:65
-msgid "The selection of MEPs displayed below is the result of your choices on the 17 votes"
-msgstr "La sélection de députés affichée ci-dessous est le résultat de vos choix sur les 17 votes"
+msgid "The selection of MEPs displayed below is the result of your choices on the 18 votes"
+msgstr "La sélection de députés affichée ci-dessous est le résultat de vos choix sur les 18 votes"
 
 #: .\yvm\templates\yvm\summary.html:67
 msgid "Your selections by stance are stored on your device with cookies"
@@ -335,8 +339,8 @@ msgid "MEPs deselected"
 msgstr "députés désélectionnés"
 
 #: .\yvm\templates\yvm\summary.html:242
-msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes, as well as identify MEP whose stances are closest to yours."
-msgstr "Ce site web vous permet de voir les votes des député·e·s européen·ne·s de la législature 2019-2024 sur 17 votes récents et de trouvez ceux et celles qui vous correspondent le mieux."
+msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 18 recent votes, as well as identify MEP whose stances are closest to yours."
+msgstr "Ce site web vous permet de voir les votes des député·e·s européen·ne·s de la législature 2019-2024 sur 18 votes récents et de trouvez ceux et celles qui vous correspondent le mieux."
 
 #: .\yvm\templates\yvm\summary.html:243
 msgid "Navigate between each text with the << and >> buttons."
@@ -363,8 +367,8 @@ msgid "For each text, you can set the stance of yours by toggling the [choose yo
 msgstr "Pour chaque texte, vous pouvez indiquer votre position avec le bouton [choisissez votre position] et cela désélectionnera les députés qui ont voté l'inverse."
 
 #: .\yvm\templates\yvm\summary.html:263
-msgid "This selection of MEPs shown below is the result of your choices on the 17 votes."
-msgstr "Cette sélection de députés affichée en-dessous est le résultat de vos choix sur les 17 votes."
+msgid "This selection of MEPs shown below is the result of your choices on the 18 votes."
+msgstr "Cette sélection de députés affichée en-dessous est le résultat de vos choix sur les 18 votes."
 
 #: .\yvm\templates\yvm\summary.html:264
 msgid "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."

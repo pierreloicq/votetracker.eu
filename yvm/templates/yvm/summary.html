@@ -26,7 +26,7 @@
                                3:'vote__procedure_url', 4:'vote__vote_date', 5:'vote__vote_number', 6:'vote_debate_url') #} -->
             {% for header in df.columns %}
                 <span colspan="3" class="has-text-centered coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
-                    [{% translate "Text" %} {{ forloop.counter }}/17] {% translate header.0|safe %}
+                    [{% translate "Text" %} {{ forloop.counter }}/18] {% translate header.0|safe %}
                 </span>
             {% endfor %}
         <button class="button px-0 mx-1 is-focused" id="nextBtn"> >> </button>
@@ -62,7 +62,7 @@
                     <b>{% translate 'Filter by stance' %}</b>
                     <br>
                     <span class="is-size-7">
-                        <!-- {% translate "The selection of MEPs displayed below is the result of your choices on the 17 votes" %} -->
+                        <!-- {% translate "The selection of MEPs displayed below is the result of your choices on the 18 votes" %} -->
                         <!-- <br> -->
                         {% translate "Your selections by stance are stored on your device with cookies" %}
                         <br>
@@ -239,7 +239,7 @@
         <div class="modal-background"></div>
         <div class="modal-content">
           <div class="box">
-            <p>{% translate "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes, as well as identify MEP whose stances are closest to yours."%}</p>
+            <p>{% translate "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 18 recent votes, as well as identify MEP whose stances are closest to yours."%}</p>
             <p>{% translate "Navigate between each text with the << and >> buttons."%}</p>
             <p>
                 <span class="icon is-small">
@@ -260,7 +260,7 @@
                 NA = {% translate "didn't vote. It may be because the MEP was not in function at the time of the vote." %}
             </p>
             <p>{% translate "For each text, you can set the stance of yours by toggling the [choose your stance] button, and it will filter out the MEP who voted the opposite."%}</p>
-            <p>{% translate "This selection of MEPs shown below is the result of your choices on the 17 votes."%}</p>
+            <p>{% translate "This selection of MEPs shown below is the result of your choices on the 18 votes."%}</p>
             <p>{% translate "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."%}</p>
             <p>{% translate "Don't take the result too much for granted. Some MEP may be in the final results because they didn't vote on some texts."%}</p>
             <p>

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 14:40+0100\n"
+"POT-Creation-Date: 2024-03-10 22:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,6 +80,10 @@ msgstr "De ontwikkeling van kleine modulaire reactoren (SMR's) voor de productie
 #: .\populate_vote_and_position_tables.py:175
 msgid "Calls on Member States to introduce solidarity taxes on high levels of wealth to provide for funding to mitigate the major challenges of our times; supports calls to start international-level discussions to establish a progressive wealth tax"
 msgstr "Roept de lidstaten op solidariteitsbelastingen in te voeren op hoge vermogens om te voorzien in financiering om de grote uitdagingen van deze tijd aan te pakken; steunt oproepen om op internationaal niveau besprekingen te starten om een progressieve vermogensbelasting in te voeren"
+
+#: .\populate_vote_and_position_tables.py:183
+msgid "Encourage the European Central Bank to consider the introduction of differentiated interest rates with lower rates for green investments, which will eventually alleviate inflationary pressures by reducing physical risk and the dependence on fossil fuels"
+msgstr "Moedigt de Europese Centrale Bank aan de invoering van gedifferentieerde rentetarieven te overwegen, met lagere tarieven voor groene investeringen, die uiteindelijk de inflatiedruk zullen verlichten door het fysieke risico en de afhankelijkheid van fossiele brandstoffen te verminderen"
 
 #: .\yvm\forms.py:8
 msgid "Austria"
@@ -198,8 +202,8 @@ msgid "Hi, I'm Pierre, the creator of this website. I built it in my spare time 
 msgstr "Hallo, ik ben Pierre, de maker van deze website. Ik heb hem in mijn vrije tijd gebouwd met als doel mensen te helpen betere beslissingen te nemen."
 
 #: .\yvm\templates\yvm\about.html:11
-msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes that were chosen and summarized by myself."
-msgstr "Op deze website kun je de stemmen van de Europees Parlementsleden  van de zittingsperiode 2019-2024 bekijken over 17 recente stemmingen die door mijzelf zijn gekozen en samengevat."
+msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 18 recent votes that were chosen and summarized by myself."
+msgstr "Op deze website kun je de stemmen van de Europees Parlementsleden  van de zittingsperiode 2019-2024 bekijken over 18 recente stemmingen die door mijzelf zijn gekozen en samengevat."
 
 #: .\yvm\templates\yvm\about.html:13
 msgid "The idea came from"
@@ -258,16 +262,16 @@ msgid "You can contact me at:"
 msgstr "Je kunt contact met me opnemen op:"
 
 #: .\yvm\templates\yvm\base.html:17 .\yvm\templates\yvm\base.html:18
-msgid "Find out how the current Members of the European Parliament voted on 17 recent votes"
-msgstr "Ontdek hoe de huidige Europees Parlementsleden hebben gestemd bij 17 recente stemmingen"
+msgid "Find out how the current Members of the European Parliament voted on 18 recent votes"
+msgstr "Ontdek hoe de huidige Europees Parlementsleden hebben gestemd bij 18 recente stemmingen"
 
 #: .\yvm\templates\yvm\index.html:10
 msgid "Be ready for the European elections of June 2024"
 msgstr "Wees klaar voor de Europese verkiezingen van juni 2024"
 
 #: .\yvm\templates\yvm\index.html:13
-msgid "Find out how the current Members of the European Parliament voted on 17 recent votes and find your best match"
-msgstr "Ontdek hoe de huidige Europees Parlementsleden hebben gestemd over 17 recente stemmingen en vind uw beste match"
+msgid "Find out how the current Members of the European Parliament voted on 18 recent votes and find your best match"
+msgstr "Ontdek hoe de huidige Europees Parlementsleden hebben gestemd over 18 recente stemmingen en vind uw beste match"
 
 #: .\yvm\templates\yvm\index.html:24
 msgid "Select a country"
@@ -294,8 +298,8 @@ msgid "Filter by stance"
 msgstr "Filter op stand"
 
 #: .\yvm\templates\yvm\summary.html:65
-msgid "The selection of MEPs displayed below is the result of your choices on the 17 votes"
-msgstr "De EP-leden selectie hieronder is het resultaat van uw keuzes op de 17 stemmen"
+msgid "The selection of MEPs displayed below is the result of your choices on the 18 votes"
+msgstr "De EP-leden selectie hieronder is het resultaat van uw keuzes op de 18 stemmen"
 
 #: .\yvm\templates\yvm\summary.html:67
 msgid "Your selections by stance are stored on your device with cookies"
@@ -330,8 +334,8 @@ msgid "MEPs deselected"
 msgstr "EP-leden gedeselecteerd"
 
 #: .\yvm\templates\yvm\summary.html:242
-msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 17 recent votes, as well as identify MEP whose stances are closest to yours."
-msgstr "Op deze website kunt u de stemmen van de Europees Parlement leden voor de zittingsperiode 2019-2024 over 17 recente stemmingen bekijken en identificeren waarvan de standpunten het dichtst bij die van u liggen."
+msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 18 recent votes, as well as identify MEP whose stances are closest to yours."
+msgstr "Op deze website kunt u de stemmen van de Europees Parlement leden voor de zittingsperiode 2019-2024 over 18 recente stemmingen bekijken en identificeren waarvan de standpunten het dichtst bij die van u liggen."
 
 #: .\yvm\templates\yvm\summary.html:243
 msgid "Navigate between each text with the << and >> buttons."
@@ -358,8 +362,8 @@ msgid "For each text, you can set the stance of yours by toggling the [choose yo
 msgstr "Voor elke tekst kun je het standpunt van jezelf instellen door op de [kies uw standpunt] knop te drukken, en het zal de EP-leden die het tegenovergestelde stemden eruit filteren."
 
 #: .\yvm\templates\yvm\summary.html:263
-msgid "This selection of MEPs shown below is the result of your choices on the 17 votes."
-msgstr "Deze EP-leden selectie hieronder is het resultaat van uw keuzes op de 17 stemmen."
+msgid "This selection of MEPs shown below is the result of your choices on the 18 votes."
+msgstr "Deze EP-leden selectie hieronder is het resultaat van uw keuzes op de 18 stemmen."
 
 #: .\yvm\templates\yvm\summary.html:264
 msgid "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."

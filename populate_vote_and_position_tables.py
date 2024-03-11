@@ -177,9 +177,14 @@ voteidListList = [
      'https://www.europarl.europa.eu/doceo/document/A-9-2023-0336-AM-002-003_EN.pdf', 
      'https://oeil.secure.europarl.europa.eu/oeil//popups/ficheprocedure.do?reference=2023/2058(INI)&l=en',
      'https://www.europarl.europa.eu/doceo/document/CRE-9-2023-12-11-ITM-014_EN.html'],
-    # date, votes
-    # [17, 'id', 'title', 'category', 'url_press', ''],
-    # date, 
+    # 27.02.2024, 268/344/13
+    [18, 
+     '164666', 
+     _("Encourage the European Central Bank to consider the introduction of differentiated interest rates with lower rates for green investments, which will eventually alleviate inflationary pressures by reducing physical risk and the dependence on fossil fuels"), 
+     'Economy', 
+     'https://www.europarl.europa.eu/doceo/document/A-9-2023-0412-AM-007-007_EN.pdf', 
+     "https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?lang=en&reference=2023%2f2064(INI)",
+     'https://www.europarl.europa.eu/doceo/document/CRE-9-2024-02-26-ITM-015_EN.html'],
 ]
 
 
