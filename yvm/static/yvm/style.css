@@ -75,7 +75,7 @@ p {
 
 .tableCell {
     padding: 2px 8px; /* vertical | horizontal */
-    width: 300px;
+    /* width: 300px; */
 }
 
 .center_content {
@@ -122,6 +122,10 @@ p {
 
 .thumb_NA {
     /* needed to catch it with the selector */
+}
+
+.thumb_column {
+    width: 88px;
 }
 
 .bottom_aligned {

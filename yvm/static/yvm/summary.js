@@ -47,8 +47,9 @@ function filterTable(tbody_id) {
     const numRows = tbody.rows.length;
     const numCols = tbody.rows[0].cells.length - 2; //exclude the 2 first cols
     const rows = document.querySelectorAll(`#${tbody_id} .votes_rows`);
-
     const filterValue = removeDiacritics(document.getElementById('filterInput').value.toLowerCase());
+    const exclude_abs = document.getElementById('exclude_abs').checked;
+    const exclude_novote = document.getElementById('exclude_novote').checked;
 
     for (const row of rows) {
         row.style.display = defaultDisplay;
@@ -61,12 +62,23 @@ function filterTable(tbody_id) {
         const votes = document.querySelectorAll(`.col_${iCol}`);
         const oppositeChoice = (imgChoice === 'thumb_for') ? 'thumb_ag' : 'thumb_for';
 
+
         if (imgChoice == 'thumb_for' || imgChoice == 'thumb_ag') {
         // then you have to sort each rows
             for (let iRow = 0; iRow < numRows; iRow++) {
                 const vote = Array.from(votes[iRow].classList).find(item => item.startsWith('thumb_'));
                 if (vote == oppositeChoice) {
                     rows[iRow].style.display = displayOfSorted;
+                }
+                if (exclude_abs == true) {
+                    if (vote == 'thumb_abs') {
+                        rows[iRow].style.display = displayOfSorted;
+                    }
+                }
+                if (exclude_novote == true) {
+                    if (vote == 'thumb_NA') {
+                        rows[iRow].style.display = displayOfSorted;
+                    }
                 }
             }
         }

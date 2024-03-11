@@ -65,11 +65,21 @@
                         <!-- {% translate "The selection of MEPs displayed below is the result of your choices on the 18 votes" %} -->
                         <!-- <br> -->
                         {% translate "Your selections by stance are stored on your device with cookies" %}
-                        <br>
                     </span>
+                    <br>
                     <button class="button is-warning is-small px-1 py-0 my-2 resetChoicesBtn" style="height:1rem">
                         {% translate "reset all choices" %}
                     </button>
+                    <br>
+                    <label class="checkbox is-size-7">
+                        <input type="checkbox" id="exclude_abs" onclick="filterTwoTables()">
+                        {% translate "stricter selection: exclude abstentions too" %}
+                    </label>
+                    <br>
+                    <label class="checkbox is-size-7 ">
+                        <input type="checkbox" id="exclude_novote" onclick="filterTwoTables()">
+                        {% translate "stricter selection: exclude no-votes too" %}
+                    </label>
                 </td>
                 <!-- {# thumb button #} -->
                 {% for header in df.columns %}
@@ -141,7 +151,7 @@
                     </td>
 
                     {% for stance, comment in row %}
-                        <td class="coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
+                        <td class="coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %} thumb_column">
                             <!-- {# stance icon #} -->
                             <div class="icon">
                                 {% if stance|truncatechars:"3" != "nan" %}
@@ -207,7 +217,7 @@
                     </td>
 
                     {% for stance, comment in row %}
-                        <td class="coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %}">
+                        <td class="coll_{{ forloop.counter0 }} {% if forloop.counter0 != 0 %} hidden {% endif %} thumb_column">
                             <!-- {# stance icon #} -->
                             <div class="icon">
                                 {% if stance|truncatechars:"3" != "nan" %}
