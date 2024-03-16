@@ -62,9 +62,9 @@
                     <b>{% translate 'Filter by stance' %}</b>
                     <br>
                     <span class="is-size-7">
-                        <!-- {% translate "The selection of MEPs displayed below is the result of your choices on the 18 votes" %} -->
-                        <!-- <br> -->
-                        {% translate "Your selections by stance are stored on your device with cookies" %}
+                        {% translate "The selection of MEPs displayed below is the result of your choices on the 18 votes" %}.
+                        <br>
+                        {% translate "Your selections by stance are stored on your device with cookies" %}.
                     </span>
                     <br>
                     <button class="button is-warning is-small px-1 py-0 my-2 resetChoicesBtn" style="height:1rem">
@@ -164,13 +164,25 @@
                             <div class="icon">
                                 {% if comment != "" and comment|truncatechars:"3" != "nan" %}
                                     <span class="tooltip_container">
-                                        <span class="icon">
+                                        <span class="icon js-modal-trigger" data-target="modal_{{index.0}}_{{ forloop.counter0 }}">
                                             <img src="{% static 'yvm/images/bubble.svg' %}" alt="click to see the comment given by the MEP">
                                         </span>
-                                        <span class="tooltip tooltip_comment">{{ comment }}</span>
+                                        <span class="tooltip tooltip_comment">{% translate "click to see the explanation submitted by the MEP" %}</span>
                                     </span> 
                                 {% endif %}
                             </div>
+
+                            <!-- {# bulma modal to show the comments #} -->
+                            <div id="modal_{{index.0}}_{{ forloop.counter0 }}" class="modal">
+                                <div class="modal-background"></div>
+                                    <div class="modal-content">
+                                        <div class="box">
+                                            {{ comment|linebreaksbr }}
+                                        </div>
+                                    </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                            </div>
+
                         </td>
                     {% endfor %}
                 </tr>
@@ -270,9 +282,9 @@
                 NA = {% translate "didn't vote. It may be because the MEP was not in function at the time of the vote." %}
             </p>
             <p>{% translate "For each text, you can set the stance of yours by toggling the [choose your stance] button, and it will filter out the MEP who voted the opposite."%}</p>
-            <p>{% translate "This selection of MEPs shown below is the result of your choices on the 18 votes."%}</p>
+            <p>{% translate "The selection of MEPs displayed below is the result of your choices on the 18 votes" %}.</p>
             <p>{% translate "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."%}</p>
-            <p>{% translate "Don't take the result too much for granted. Some MEP may be in the final results because they didn't vote on some texts."%}</p>
+            <p>{% translate "You can make the selection more strict by excluding the abstentions and/or the no-vote (NA) for the texts on which you set your stance."%}</p>
             <p>
                 {% translate "MEPs are invited to explain their stances. If they provide a comment, you can see it by clicking on the"%}
                 <span class="icon is-small">
