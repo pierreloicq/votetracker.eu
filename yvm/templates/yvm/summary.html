@@ -160,7 +160,7 @@
                                         <span class="thumb_NA col_{{ forloop.counter }}">NA</span>
                                 {% endif %}
                             </div>
-                            <!-- {# bubble to show the comment if present #} -->
+                            <!-- {# bubble icon to show the comment if present #} -->
                             <div class="icon">
                                 {% if comment != "" and comment|truncatechars:"3" != "nan" %}
                                     <span class="tooltip_container">
@@ -238,17 +238,30 @@
                                         <span class="thumb_NA col_{{ forloop.counter }}">NA</span>
                                 {% endif %}
                             </div>
-                            <!-- {# bubble to show the comment if present #} -->
+
+                            <!-- {# bubble icon to show the comment if present #} -->
                             <div class="icon">
                                 {% if comment != "" and comment|truncatechars:"3" != "nan" %}
                                     <span class="tooltip_container">
-                                        <span class="icon">
+                                        <span class="icon js-modal-trigger" data-target="modal_{{index.0}}_{{ forloop.counter0 }}_deselected">
                                             <img src="{% static 'yvm/images/bubble.svg' %}" alt="click to see the comment given by the MEP">
                                         </span>
-                                        <span class="tooltip tooltip_comment">{{ comment }}</span>
+                                        <span class="tooltip tooltip_comment">{% translate "click to see the explanation submitted by the MEP" %}</span>
                                     </span> 
                                 {% endif %}
                             </div>
+
+                            <!-- {# bulma modal to show the comments #} -->
+                            <div id="modal_{{index.0}}_{{ forloop.counter0 }}_deselected" class="modal">
+                                <div class="modal-background"></div>
+                                    <div class="modal-content">
+                                        <div class="box">
+                                            {{ comment|linebreaksbr }}
+                                        </div>
+                                    </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                            </div>
+
                         </td>
                     {% endfor %}
                 </tr>
