@@ -28,6 +28,10 @@ if config('MODE') == 'PROD':
     DEBUG = False
     STATIC_ROOT = config('STATIC_ROOT')
     STATIC_URL  = config('STATIC_URL')
+    SECURE_HSTS_SECONDS = 600
+    SECURE_SSL_REDIRECT = True
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
 elif config('MODE') == 'DEV':
     DEBUG = True
     STATIC_URL = 'static/'
