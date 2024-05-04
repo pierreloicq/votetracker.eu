@@ -106,12 +106,13 @@ function filterTable(tbody_id) {
 }
 
 
-// write cookie for 1 column
+// write cookie for 1 column with expiration date
 function writeCookie(icon) {
-    icon = Array.from(icon); 
-    let col = icon.find(item => item.startsWith('col_')) || '';
-    let thumb = icon.find(item => item.startsWith('thumb')) || '';
-    document.cookie = `${col}=${thumb}`;
+  icon = Array.from(icon);
+  let col = icon.find(item => item.startsWith('col_')) || '';
+  let thumb = icon.find(item => item.startsWith('thumb')) || '';
+  const expirationDate = new Date('2024-06-19T23:59:59');
+  document.cookie = `${col}=${thumb}; SameSite=Strict; expires=${expirationDate.toUTCString()};`;
 }
 
 function readCookie() {

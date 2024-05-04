@@ -154,8 +154,8 @@ p {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    z-index: 100;
 }
-
 
 .tooltip_comment {
     transform: translateX(-100%);
