@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 15:32+0200\n"
+"POT-Creation-Date: 2024-05-04 16:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,8 +262,12 @@ msgid "Thanks to all these projects and people"
 msgstr "Dankzij al deze projecten en mensen"
 
 #: .\yvm\templates\yvm\about.html:54
-msgid "You can contact me at:"
-msgstr "Je kunt contact met me opnemen op:"
+msgid "If you are eager to help me promoting this website in your country, including in 2029,"
+msgstr "Als u graag wilt helpen bij het promoten van deze website in uw land, ook in 2029,"
+
+#: .\yvm\templates\yvm\about.html:55
+msgid "you can contact me at:"
+msgstr "u kunt mij contacteren op:"
 
 #: .\yvm\templates\yvm\base.html:17 .\yvm\templates\yvm\base.html:18
 msgid "Find out how the current Members of the European Parliament voted on 18 recent votes"
@@ -301,7 +305,7 @@ msgstr "debat"
 msgid "Filter by stance"
 msgstr "Filter op stand"
 
-#: .\yvm\templates\yvm\summary.html:65 .\yvm\templates\yvm\summary.html:306
+#: .\yvm\templates\yvm\summary.html:65 .\yvm\templates\yvm\summary.html:312
 msgid "The selection of MEPs displayed below is the result of your choices on the 18 votes"
 msgstr "De selectie van parlementsleden hieronder is het resultaat van uw keuzes uit de 18 stemmen"
 
@@ -309,119 +313,119 @@ msgstr "De selectie van parlementsleden hieronder is het resultaat van uw keuzes
 msgid "Your selections by stance are stored on your device with cookies"
 msgstr "Uw selecties worden op uw apparaat opgeslagen met cookies"
 
-#: .\yvm\templates\yvm\summary.html:73
-msgid "Cookies are used so that you don't have to set your stances again if you close your browser. They will expire on 19 June 2024 and are not shared with anyone. Reset all stances and cookies will be reset too."
-msgstr "Cookies worden gebruikt zodat u uw instellingen niet opnieuw hoeft in te stellen als u uw browser afsluit. Ze verlopen op 19 juni 2024 en worden met niemand gedeeld. Reset alle standen en de cookies worden ook gereset."
-
-#: .\yvm\templates\yvm\summary.html:79
+#: .\yvm\templates\yvm\summary.html:74
 msgid "reset all choices"
 msgstr "alle keuzes resetten"
 
-#: .\yvm\templates\yvm\summary.html:84
+#: .\yvm\templates\yvm\summary.html:79
 msgid "stricter selection: exclude abstentions too"
 msgstr "strengere selectie: ook stemonthoudingen uitsluiten"
 
-#: .\yvm\templates\yvm\summary.html:89
+#: .\yvm\templates\yvm\summary.html:84
 msgid "stricter selection: exclude no-votes too"
 msgstr "strengere selectie: ook 'geen stem' uitsluiten"
 
-#: .\yvm\templates\yvm\summary.html:99
+#: .\yvm\templates\yvm\summary.html:94
 msgid "choose"
 msgstr "kies"
 
-#: .\yvm\templates\yvm\summary.html:101
+#: .\yvm\templates\yvm\summary.html:96
 msgid "your"
 msgstr "uw"
 
-#: .\yvm\templates\yvm\summary.html:103
+#: .\yvm\templates\yvm\summary.html:98
 msgid "stance"
 msgstr "standpunt"
 
-#: .\yvm\templates\yvm\summary.html:115
+#: .\yvm\templates\yvm\summary.html:110
 msgid "Filter by name or party"
 msgstr "Filter op naam of partij"
 
-#: .\yvm\templates\yvm\summary.html:127
+#: .\yvm\templates\yvm\summary.html:122
 msgid "MEPs selected"
 msgstr "geselecteerde parlementsleden"
 
-#: .\yvm\templates\yvm\summary.html:178 .\yvm\templates\yvm\summary.html:257
+#: .\yvm\templates\yvm\summary.html:173 .\yvm\templates\yvm\summary.html:252
 msgid "click to see the explanation submitted by the MEP"
 msgstr "Klik om de uitleg ingediend bij de Parlementslid te zien"
 
-#: .\yvm\templates\yvm\summary.html:206
+#: .\yvm\templates\yvm\summary.html:201
 msgid "MEPs deselected"
 msgstr "gedeselecteerde parlementsleden"
 
-#: .\yvm\templates\yvm\summary.html:285
+#: .\yvm\templates\yvm\summary.html:280
+msgid "Cookies are used so that you don't have to set your stances again if you close your browser. They will expire on 19 June 2024 and are not shared with anyone. Reset all stances and cookies will be reset too."
+msgstr "Cookies worden gebruikt zodat u uw instellingen niet opnieuw hoeft in te stellen als u uw browser afsluit. Ze verlopen op 19 juni 2024 en worden met niemand gedeeld. Reset alle standen en de cookies worden ook gereset."
+
+#: .\yvm\templates\yvm\summary.html:291
 msgid "This website enables you to view the votes of the Members of the European Parliament (MEPs) of the 2019-2024 legislature on 18 recent votes, as well as identify MEP whose stances are closest to yours."
 msgstr "Op deze website kunt u de stemmen van de Europees Parlement leden voor de zittingsperiode 2019-2024 over 18 recente stemmingen bekijken en identificeren waarvan de standpunten het dichtst bij die van u liggen."
 
-#: .\yvm\templates\yvm\summary.html:286
+#: .\yvm\templates\yvm\summary.html:292
 msgid "Navigate between each text with the << and >> buttons."
 msgstr "Navigeer tussen elke tekst met de knoppen << en >>."
 
-#: .\yvm\templates\yvm\summary.html:291
+#: .\yvm\templates\yvm\summary.html:297
 msgid "in favor"
 msgstr "voor"
 
-#: .\yvm\templates\yvm\summary.html:296
+#: .\yvm\templates\yvm\summary.html:302
 msgid "against"
 msgstr "tegen"
 
-#: .\yvm\templates\yvm\summary.html:301
+#: .\yvm\templates\yvm\summary.html:307
 msgid "abstention"
 msgstr "stemonthouding"
 
-#: .\yvm\templates\yvm\summary.html:303
+#: .\yvm\templates\yvm\summary.html:309
 msgid "didn't vote. It may be because the MEP was not in function at the time of the vote."
 msgstr "niet gestemd. Het kan zijn omdat het Parlementslid ten tijde van de stemming niet in functie was."
 
-#: .\yvm\templates\yvm\summary.html:305
+#: .\yvm\templates\yvm\summary.html:311
 msgid "For each text, you can set the stance of yours by toggling the [choose your stance] button, and it will filter out the MEP who voted the opposite."
 msgstr "Voor elke tekst kun je het standpunt van jezelf instellen door op de [kies uw standpunt] knop te drukken, en het zal de EP-leden die het tegenovergestelde stemden eruit filteren."
 
-#: .\yvm\templates\yvm\summary.html:307
+#: .\yvm\templates\yvm\summary.html:313
 msgid "As you progress through the texts, the selection should narrow down, eventually indicating which MEPs are your best matches."
 msgstr "Naarmate je verder in de teksten komt, wordt de selectie steeds kleiner en kun je uiteindelijk zien welke parlementsleden het beste bij je passen."
 
-#: .\yvm\templates\yvm\summary.html:308
+#: .\yvm\templates\yvm\summary.html:314
 msgid "You can make the selection more strict by excluding the abstentions and/or the no-vote (NA) for the texts on which you set your stance."
 msgstr "U kunt de selectie strenger maken door de stemonthoudingen en/of de 'geen stem' (NA) uit te sluiten voor de teksten waarop u standpunt heeft ingenomen."
 
-#: .\yvm\templates\yvm\summary.html:310
+#: .\yvm\templates\yvm\summary.html:316
 msgid "MEPs are invited to explain their stances. If they provide a comment, you can see it by clicking on the"
 msgstr "De Parlementsleden worden uitgenodigd om hun standpunt toe te lichten. Als ze commentaar geven, kun je dat zien door op de knop"
 
-#: .\yvm\templates\yvm\summary.html:316
+#: .\yvm\templates\yvm\summary.html:322
 msgid "Click on the button"
 msgstr "Klik op de knop"
 
-#: .\yvm\templates\yvm\summary.html:318
+#: .\yvm\templates\yvm\summary.html:324
 msgid "to get statistics by party and country on this vote."
 msgstr "voor statistieken per partij en land over deze stemming."
 
-#: .\yvm\templates\yvm\summary.html:321
+#: .\yvm\templates\yvm\summary.html:327
 msgid "Keep in mind that the newcomers MEPs may also be interesting although they are not shown here."
 msgstr "Vergeet niet dat de nieuwkomers in het Europees Parlement ook interessant kunnen zijn, hoewel ze hier niet worden weergegeven."
 
-#: .\yvm\templates\yvm\summary.html:322
+#: .\yvm\templates\yvm\summary.html:328
 msgid "Also, your best match may not stand for re-election."
 msgstr "Ook is het mogelijk dat je beste match zich niet herkiesbaar stelt."
 
-#: .\yvm\templates\yvm\summary.html:324
+#: .\yvm\templates\yvm\summary.html:330
 msgid "If you want to see the MEPs votes for other texts, you can search for them on"
 msgstr "Als je de stemmen van de Parlementsleden voor andere teksten wilt zien, kun je ze zoeken op"
 
-#: .\yvm\templates\yvm\summary.html:326
+#: .\yvm\templates\yvm\summary.html:332
 msgid "or on"
 msgstr "of op"
 
-#: .\yvm\templates\yvm\summary.html:330
+#: .\yvm\templates\yvm\summary.html:336
 msgid "Other voting advice applications that consider all persons standing for elections are available here:"
 msgstr "Andere toepassingen voor stemadvies die rekening houden met alle personen die zich kandidaat stellen voor de verkiezingen, zijn hier beschikbaar:"
 
-#: .\yvm\templates\yvm\summary.html:339
+#: .\yvm\templates\yvm\summary.html:345
 msgid "For more information on the elections and the role of the parliament, visit"
 msgstr "Ga voor meer informatie over de verkiezingen en de rol van het parlement naar"
 

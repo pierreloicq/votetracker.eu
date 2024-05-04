@@ -65,13 +65,8 @@
                         {% translate "The selection of MEPs displayed below is the result of your choices on the 18 votes" %}.
                         <br>
                         {% translate "Your selections by stance are stored on your device with cookies" %}
-                        <span class="tooltip_container">
-                            <span class="icon is-small">
-                                <img src="{% static 'yvm/images/help.svg' %}" alt="more info on cookie usage">
-                            </span>
-                            <span class="tooltip">
-                                {% translate "Cookies are used so that you don't have to set your stances again if you close your browser. They will expire on 19 June 2024 and are not shared with anyone. Reset all stances and cookies will be reset too." %}
-                            </span>
+                        <span class="icon is-small help_button">
+                            <img src="{% static 'yvm/images/help.svg' %}" alt="help" class="js-modal-trigger" data-target="cookie_help">
                         </span>
                     </span>
                     <br>
@@ -276,6 +271,17 @@
             {% endfor %}
         </tbody>
     </table>
+
+    <!-- {# cookie modal #} -->
+    <div id="cookie_help" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                {% translate "Cookies are used so that you don't have to set your stances again if you close your browser. They will expire on 19 June 2024 and are not shared with anyone. Reset all stances and cookies will be reset too." %}
+            </div>
+        </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+    </div>
 
     <!-- {# help modal #} -->
     <div id="general_help" class="modal">
